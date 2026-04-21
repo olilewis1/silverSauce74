@@ -1,0 +1,1834 @@
+2026-03-12 21:17:10,874 | INFO     | Daemon started. Interval: 30 min
+2026-03-12 21:17:10,880 | INFO     | === Cycle #1 at 17:17:10 ET ===
+2026-03-12 21:17:10,881 | INFO     | Refreshing portfolio prices...
+2026-03-12 21:17:10,883 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-12 21:17:15,089 | INFO     | AI suggested: AAPL, JNJ, GOOGL, TSLA, BTC-USD
+2026-03-12 21:17:15,091 | INFO     | Analysing [cyan]AAPL[/cyan]...
+2026-03-12 21:17:19,413 | INFO     | AAPL → HOLD (confidence: 0%, risk: 100%)
+2026-03-12 21:17:19,418 | INFO     | [yellow]Risk rejected AAPL: Risk score 100% too high for moderate profile.[/yellow]
+2026-03-12 21:17:19,419 | INFO     | Analysing [cyan]JNJ[/cyan]...
+2026-03-12 21:17:22,423 | INFO     | JNJ → HOLD (confidence: 0%, risk: 100%)
+2026-03-12 21:17:22,425 | INFO     | [yellow]Risk rejected JNJ: Risk score 100% too high for moderate profile.[/yellow]
+2026-03-12 21:17:22,426 | INFO     | Analysing [cyan]GOOGL[/cyan]...
+2026-03-12 21:17:25,548 | INFO     | GOOGL → HOLD (confidence: 0%, risk: 100%)
+2026-03-12 21:17:25,549 | INFO     | [yellow]Risk rejected GOOGL: Risk score 100% too high for moderate profile.[/yellow]
+2026-03-12 21:17:25,550 | INFO     | Analysing [cyan]TSLA[/cyan]...
+2026-03-12 21:17:28,040 | INFO     | TSLA → HOLD (confidence: 0%, risk: 100%)
+2026-03-12 21:17:28,042 | INFO     | [yellow]Risk rejected TSLA: Risk score 100% too high for moderate profile.[/yellow]
+2026-03-12 21:17:28,044 | INFO     | Analysing [cyan]BTC-USD[/cyan]...
+2026-03-12 21:17:31,122 | INFO     | BTC-USD → HOLD (confidence: 0%, risk: 100%)
+2026-03-12 21:17:31,126 | INFO     | [yellow]Risk rejected BTC-USD: Risk score 100% too high for moderate profile.[/yellow]
+2026-03-12 21:17:31,127 | INFO     | Cycle #1 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-12 21:17:31,128 | INFO     | Portfolio: cash=$100000.00 | invested=$0.00 (0.0%) | total=$100000.00 | P&L=$+0.00
+2026-03-12 21:17:31,128 | INFO     | Sleeping 30 minutes until next cycle...
+2026-03-12 21:24:37,984 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:24:38,674 | INFO     | Daemon stopped.
+2026-03-12 21:24:42,126 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:24:48,019 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:24:54,392 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:24:54,600 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:24:54,752 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:24:54,891 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:24:55,044 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:24:55,192 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:26:06,973 | INFO     | Daemon started. Interval: 5 min
+2026-03-12 21:26:06,982 | INFO     | === Cycle #1 at 17:26:06 ET ===
+2026-03-12 21:26:06,983 | INFO     | Refreshing portfolio prices...
+2026-03-12 21:26:06,984 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-12 21:26:11,902 | INFO     | AI suggested: NVDA, MSFT, TSLA, ETH-USD, JNJ
+2026-03-12 21:26:11,906 | INFO     | Analysing [cyan]NVDA[/cyan]...
+2026-03-12 21:26:15,532 | INFO     | NVDA → BUY (confidence: 75%, risk: 35%)
+2026-03-12 21:26:15,680 | INFO     | [green]BOUGHT[/green] 54 shares of NVDA @ $183.14 — NVIDIA is a leading technology company with a strong market position and recent 
+2026-03-12 21:26:15,681 | INFO     | AI exit levels for NVDA: SL=7.0% TP=15.0%
+2026-03-12 21:26:15,682 | INFO     | Analysing [cyan]MSFT[/cyan]...
+2026-03-12 21:26:17,687 | INFO     | MSFT → BUY (confidence: 70%, risk: 35%)
+2026-03-12 21:26:17,842 | WARNING  | [red]REJECTED[/red] MSFT buy: Microsoft is a blue-chip stock in the technology sector with a strong market position. Despite recen
+2026-03-12 21:26:17,844 | INFO     | Analysing [cyan]TSLA[/cyan]...
+2026-03-12 21:26:20,758 | INFO     | TSLA → HOLD (confidence: 70%, risk: 65%)
+2026-03-12 21:26:20,761 | INFO     | TSLA: HOLD — no action.
+2026-03-12 21:26:20,762 | INFO     | Analysing [cyan]ETH-USD[/cyan]...
+2026-03-12 21:26:22,695 | INFO     | ETH-USD → BUY (confidence: 70%, risk: 65%)
+2026-03-12 21:26:22,848 | WARNING  | [red]REJECTED[/red] ETH-USD buy: Ethereum has shown a recent upward trend with increasing volumes, indicating potential recovery from
+2026-03-12 21:26:22,850 | INFO     | Analysing [cyan]JNJ[/cyan]...
+2026-03-12 21:26:24,542 | INFO     | JNJ → BUY (confidence: 75%, risk: 25%)
+2026-03-12 21:26:24,697 | WARNING  | [red]REJECTED[/red] JNJ buy: Johnson & Johnson is a stable blue-chip stock with a solid dividend yield and recent positive price 
+2026-03-12 21:26:24,698 | INFO     | Cycle #1 complete. Trades this cycle: 1 | Today: 1/100
+2026-03-12 21:26:24,699 | INFO     | Portfolio: cash=$90110.44 | invested=$9889.56 (9.9%) | total=$100000.00 | P&L=$+0.00
+2026-03-12 21:26:24,700 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-12 21:28:29,681 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:28:30,157 | INFO     | Daemon stopped.
+2026-03-12 21:28:32,265 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:28:33,641 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:28:34,453 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:33:30,363 | INFO     | Daemon started. Interval: 5 min
+2026-03-12 21:33:30,367 | INFO     | === Cycle #1 at 17:33:30 ET ===
+2026-03-12 21:33:30,367 | INFO     | Refreshing portfolio prices...
+2026-03-12 21:33:30,557 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-12 21:33:34,437 | INFO     | AI suggested: NVDA, MSFT, JNJ, AMZN, XOM
+2026-03-12 21:33:34,439 | INFO     | Analysing [cyan]NVDA[/cyan]...
+2026-03-12 21:33:36,732 | INFO     | NVDA → BUY (confidence: 75%, risk: 40%)
+2026-03-12 21:34:07,424 | WARNING  | [red]REJECTED[/red] NVDA buy: NVIDIA is a leading player in the technology sector with a strong market position. Despite recent vo
+2026-03-12 21:34:07,428 | INFO     | Analysing [cyan]MSFT[/cyan]...
+2026-03-12 21:34:11,062 | INFO     | MSFT → BUY (confidence: 75%, risk: 35%)
+2026-03-12 21:34:41,915 | WARNING  | [red]REJECTED[/red] MSFT buy: Microsoft is a blue-chip stock with a strong market position in the technology sector. Despite recen
+2026-03-12 21:34:41,925 | INFO     | Analysing [cyan]JNJ[/cyan]...
+2026-03-12 21:34:45,257 | INFO     | JNJ → BUY (confidence: 75%, risk: 30%)
+2026-03-12 21:35:16,138 | WARNING  | [red]REJECTED[/red] JNJ buy: Johnson & Johnson is a stable blue-chip stock in the healthcare sector with a solid market cap and a
+2026-03-12 21:35:16,145 | INFO     | Analysing [cyan]AMZN[/cyan]...
+2026-03-12 21:35:19,315 | INFO     | AMZN → BUY (confidence: 75%, risk: 35%)
+2026-03-12 21:35:50,079 | WARNING  | [red]REJECTED[/red] AMZN buy: Amazon is a well-established company with a strong market position in the Consumer Cyclical sector. 
+2026-03-12 21:35:50,089 | INFO     | Analysing [cyan]XOM[/cyan]...
+2026-03-12 21:35:53,495 | INFO     | XOM → BUY (confidence: 75%, risk: 35%)
+2026-03-12 21:36:23,774 | WARNING  | [red]REJECTED[/red] XOM buy: Exxon Mobil Corporation is a blue-chip stock in the energy sector with a strong market position and 
+2026-03-12 21:36:23,782 | INFO     | Cycle #1 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-12 21:36:23,783 | INFO     | Portfolio: cash=$100000.00 | invested=$0.00 (0.0%) | total=$100000.00 | P&L=$+0.00
+2026-03-12 21:36:23,785 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-12 21:36:33,012 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:36:33,826 | INFO     | Daemon stopped.
+2026-03-12 21:42:04,219 | INFO     | Daemon started. Interval: 5 min
+2026-03-12 21:42:04,224 | INFO     | === Cycle #1 at 17:42:04 ET ===
+2026-03-12 21:42:04,225 | INFO     | Refreshing portfolio prices...
+2026-03-12 21:42:04,407 | INFO     | Analysing [cyan]PLTR[/cyan]...
+2026-03-12 21:42:09,584 | INFO     | PLTR → BUY (confidence: 75%, risk: 70%)
+2026-03-12 21:42:40,419 | WARNING  | [red]REJECTED[/red] PLTR buy: Palantir Technologies Inc. is a high-risk, high-reward technology stock with recent price volatility
+2026-03-12 21:42:40,425 | INFO     | Analysing [cyan]RIVN[/cyan]...
+2026-03-12 21:42:44,490 | INFO     | RIVN → BUY (confidence: 75%, risk: 80%)
+2026-03-12 21:42:44,764 | WARNING  | [red]REJECTED[/red] RIVN buy: Rivian Automotive is currently trading near its 52-week low with a recent significant price drop, pr
+2026-03-12 21:42:44,766 | INFO     | Analysing [cyan]UPST[/cyan]...
+2026-03-12 21:42:50,048 | INFO     | UPST → BUY (confidence: 75%, risk: 80%)
+2026-03-12 21:43:20,304 | WARNING  | [red]REJECTED[/red] UPST buy: Upstart Holdings, Inc. is currently trading near its 52-week low with significant recent price volat
+2026-03-12 21:43:20,307 | INFO     | Analysing [cyan]COIN[/cyan]...
+2026-03-12 21:43:23,097 | INFO     | COIN → BUY (confidence: 75%, risk: 80%)
+2026-03-12 21:43:23,342 | WARNING  | [red]REJECTED[/red] COIN buy: Coinbase has experienced significant volatility and a recent price drop, aligning with the client's 
+2026-03-12 21:43:23,344 | INFO     | Analysing [cyan]MARA[/cyan]...
+2026-03-12 21:43:26,863 | INFO     | MARA → BUY (confidence: 75%, risk: 80%)
+2026-03-12 21:43:27,103 | WARNING  | [red]REJECTED[/red] MARA buy: MARA Holdings is a high-risk, high-reward opportunity due to its significant volatility and recent p
+2026-03-12 21:43:27,105 | INFO     | Cycle #1 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-12 21:43:27,106 | INFO     | Portfolio: cash=$100000.00 | invested=$0.00 (0.0%) | total=$100000.00 | P&L=$+0.00
+2026-03-12 21:43:27,107 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-12 21:45:24,376 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:45:24,531 | INFO     | Daemon stopped.
+2026-03-12 21:46:20,431 | INFO     | Daemon started. Interval: 5 min
+2026-03-12 21:46:20,433 | INFO     | === Cycle #1 at 17:46:20 ET ===
+2026-03-12 21:46:20,434 | INFO     | Refreshing portfolio prices...
+2026-03-12 21:46:20,628 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-12 21:46:24,311 | INFO     | AI suggested: NVDA, TSLA, SOL-USD, PLTR, RBLX
+2026-03-12 21:46:24,312 | INFO     | Analysing [cyan]NVDA[/cyan]...
+2026-03-12 21:46:27,547 | INFO     | NVDA → BUY (confidence: 75%, risk: 65%)
+2026-03-12 21:46:57,811 | WARNING  | [red]REJECTED[/red] NVDA buy: NVIDIA is a leading player in the technology sector with strong growth potential. Despite recent vol
+2026-03-12 21:46:57,814 | INFO     | Analysing [cyan]TSLA[/cyan]...
+2026-03-12 21:47:00,815 | INFO     | TSLA → BUY (confidence: 75%, risk: 80%)
+2026-03-12 21:47:31,127 | WARNING  | [red]REJECTED[/red] TSLA buy: Tesla's recent price decline and high volatility align with the client's high-risk profile. The stoc
+2026-03-12 21:47:31,131 | INFO     | Analysing [cyan]SOL-USD[/cyan]...
+2026-03-12 21:47:34,624 | INFO     | SOL-USD → BUY (confidence: 75%, risk: 85%)
+2026-03-12 21:47:34,866 | WARNING  | [red]REJECTED[/red] SOL-USD buy: Solana has shown recent upward momentum despite a significant 3-month decline, indicating potential 
+2026-03-12 21:47:34,868 | INFO     | Analysing [cyan]PLTR[/cyan]...
+2026-03-12 21:47:37,395 | INFO     | PLTR → BUY (confidence: 75%, risk: 70%)
+2026-03-12 21:48:07,718 | WARNING  | [red]REJECTED[/red] PLTR buy: Palantir Technologies Inc. is a high-risk, high-reward stock with significant volatility, aligning w
+2026-03-12 21:48:07,722 | INFO     | Analysing [cyan]RBLX[/cyan]...
+2026-03-12 21:48:10,980 | INFO     | RBLX → BUY (confidence: 75%, risk: 80%)
+2026-03-12 21:48:41,315 | WARNING  | [red]REJECTED[/red] RBLX buy: Roblox Corporation is currently trading near its 52-week low, presenting a potential buying opportun
+2026-03-12 21:48:41,320 | INFO     | Cycle #1 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-12 21:48:41,322 | INFO     | Portfolio: cash=$100000.00 | invested=$0.00 (0.0%) | total=$100000.00 | P&L=$+98000.00
+2026-03-12 21:48:41,323 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-12 21:48:51,415 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:48:52,371 | INFO     | Daemon stopped.
+2026-03-12 21:48:52,648 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:51:22,315 | INFO     | Daemon started. Interval: 5 min
+2026-03-12 21:51:22,320 | INFO     | === Cycle #1 at 17:51:22 ET ===
+2026-03-12 21:51:22,320 | INFO     | Refreshing portfolio prices...
+2026-03-12 21:51:22,500 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-12 21:51:26,559 | INFO     | AI suggested: NVDA, TSLA, SOL-USD, PLTR, RBLX
+2026-03-12 21:51:26,561 | INFO     | Analysing [cyan]NVDA[/cyan]...
+2026-03-12 21:51:29,257 | INFO     | NVDA → HOLD (confidence: 50%, risk: 35%)
+2026-03-12 21:51:29,259 | INFO     | NVDA: HOLD — no action.
+2026-03-12 21:51:29,261 | INFO     | Analysing [cyan]TSLA[/cyan]...
+2026-03-12 21:51:32,153 | INFO     | TSLA → BUY (confidence: 75%, risk: 80%)
+2026-03-12 21:52:02,558 | WARNING  | [red]REJECTED[/red] TSLA buy: Tesla is a high-risk, high-reward stock with significant volatility, aligning with the client's high-risk profile. Despite recent declines, the stock is trading well below its 52-week high, presenting a potential buying opportunity for growth. The recent price action shows a potential for a rebound. | BROKER: Order did not fill within timeout
+2026-03-12 21:52:02,564 | INFO     | Analysing [cyan]SOL-USD[/cyan]...
+2026-03-12 21:52:04,754 | INFO     | SOL-USD → BUY (confidence: 75%, risk: 80%)
+2026-03-12 21:52:05,109 | WARNING  | [red]REJECTED[/red] SOL-USD buy: Solana has shown recent upward momentum with a recovery from its 3-month decline. Its high volatility aligns with the client's high-risk profile, and the current price is significantly below the 52-week high, suggesting potential for growth. | BROKER: {"code":42210000,"message":"asset \"SOL-USD\" not found"}
+2026-03-12 21:52:05,111 | INFO     | Analysing [cyan]PLTR[/cyan]...
+2026-03-12 21:52:07,889 | INFO     | PLTR → BUY (confidence: 75%, risk: 70%)
+2026-03-12 21:52:38,835 | WARNING  | [red]REJECTED[/red] PLTR buy: Palantir Technologies Inc. shows potential for growth with its recent upward price movement and high trading volume, despite a recent 3-month decline. The stock's volatility aligns with the client's high-risk profile, and the current price is well below its 52-week high, offering a potential entry point. | BROKER: Order did not fill within timeout
+2026-03-12 21:52:38,838 | INFO     | Analysing [cyan]RBLX[/cyan]...
+2026-03-12 21:52:41,472 | INFO     | RBLX → BUY (confidence: 75%, risk: 80%)
+2026-03-12 21:52:43,977 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:52:45,730 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:52:49,051 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:52:49,425 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:52:59,451 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:52:59,633 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:52:59,786 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:52:59,926 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:53:00,079 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:53:00,971 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:53:01,154 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:53:01,299 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:53:01,461 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:53:01,617 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:53:01,779 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:53:01,946 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 21:53:12,155 | WARNING  | [red]REJECTED[/red] RBLX buy: Roblox Corporation is currently trading near its 52-week low, presenting a potential buying opportunity for high-risk investors. Despite recent volatility and a significant price drop, the stock's momentum and growth potential align with the client's high-risk profile. The current market conditions suggest a potential rebound. | BROKER: Order did not fill within timeout
+2026-03-12 21:53:12,158 | INFO     | Cycle #1 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-12 21:53:12,160 | INFO     | Portfolio: cash=$100000.00 | invested=$0.00 (0.0%) | total=$100000.00 | P&L=$+97000.00
+2026-03-12 21:53:12,161 | INFO     | Daemon stopped.
+2026-03-12 22:04:00,225 | INFO     | Daemon started. Interval: 5 min
+2026-03-12 22:04:00,230 | INFO     | === Cycle #1 at 18:04:00 ET ===
+2026-03-12 22:04:00,231 | INFO     | Refreshing portfolio prices...
+2026-03-12 22:04:00,414 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-12 22:04:04,772 | INFO     | AI suggested: 
+2026-03-12 22:04:04,773 | INFO     | No tickers to analyse this cycle.
+2026-03-12 22:04:04,774 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-12 22:04:09,609 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 22:04:09,799 | INFO     | Daemon stopped.
+2026-03-12 22:05:20,321 | INFO     | Daemon started. Interval: 5 min
+2026-03-12 22:05:20,327 | INFO     | === Cycle #1 at 18:05:20 ET ===
+2026-03-12 22:05:20,328 | INFO     | Refreshing portfolio prices...
+2026-03-12 22:05:20,520 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-12 22:05:25,952 | INFO     | AI suggested: BTC-USD, ETH-USD, AAVE-USD, UNI-USD, LINK-USD
+2026-03-12 22:05:25,954 | INFO     | Analysing [cyan]BTC-USD[/cyan]...
+2026-03-12 22:05:29,727 | INFO     | BTC-USD → BUY (confidence: 75%, risk: 85%)
+2026-03-12 22:05:29,876 | WARNING  | [red]REJECTED[/red] BTC-USD buy: Bitcoin has shown a recent upward momentum after a period of decline, and its current price is below the 52-week high, suggesting potential for growth. The high volatility aligns with the client's high-risk profile, making it a suitable investment. | REJECTED: Adjusted position too small after constraints.
+2026-03-12 22:05:29,878 | INFO     | Analysing [cyan]ETH-USD[/cyan]...
+2026-03-12 22:05:32,216 | INFO     | ETH-USD → BUY (confidence: 75%, risk: 70%)
+2026-03-12 22:05:32,371 | WARNING  | [red]REJECTED[/red] ETH-USD buy: Ethereum has shown a recent upward trend with increasing volumes, suggesting positive momentum. Despite the 3-month decline, the current price is recovering, and the volatility aligns with the client's high-risk profile. | REJECTED: Adjusted position too small after constraints.
+2026-03-12 22:05:32,373 | INFO     | Analysing [cyan]AAVE-USD[/cyan]...
+2026-03-12 22:05:36,216 | INFO     | AAVE-USD → BUY (confidence: 75%, risk: 80%)
+2026-03-12 22:05:36,554 | WARNING  | [red]REJECTED[/red] AAVE-USD buy: Aave USD has shown a recent upward momentum with a 1.29% price increase and a recovery from its recent lows. Despite a 41.75% decline over the past three months, the current price is near the lower end of its 52-week range, suggesting potential for growth. Given the client's high-risk profile, this presents an opportunity for a momentum play. | BROKER: {"code":42210000,"message":"asset \"AAVE-USD\" not found"}
+2026-03-12 22:05:36,558 | INFO     | Analysing [cyan]UNI-USD[/cyan]...
+2026-03-12 22:05:36,904 | ERROR    | Error processing UNI-USD: No historical data available for UNI-USD
+2026-03-12 22:05:36,906 | INFO     | Analysing [cyan]LINK-USD[/cyan]...
+2026-03-12 22:05:40,552 | INFO     | LINK-USD → BUY (confidence: 75%, risk: 70%)
+2026-03-12 22:05:40,902 | WARNING  | [red]REJECTED[/red] LINK-USD buy: Chainlink has shown recent price momentum with a steady increase over the past few days and a significant volume spike. Despite a 3-month decline, the current price is near the 52-week low, presenting a potential rebound opportunity. The high volatility aligns with the client's high-risk profile. | BROKER: {"code":42210000,"message":"asset \"LINK-USD\" not found"}
+2026-03-12 22:05:40,905 | INFO     | Cycle #1 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-12 22:05:40,907 | INFO     | Portfolio: cash=$100000.00 | invested=$0.00 (0.0%) | total=$100000.00 | P&L=$+99000.00
+2026-03-12 22:05:40,909 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-12 22:05:53,505 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-12 22:05:53,961 | INFO     | Daemon stopped.
+2026-03-17 21:00:14,256 | INFO     | Daemon started. Interval: 5 min
+2026-03-17 21:00:14,263 | INFO     | === Cycle #1 at 17:00:14 ET ===
+2026-03-17 21:00:14,263 | INFO     | Refreshing portfolio prices...
+2026-03-17 21:00:14,465 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-17 21:00:23,061 | INFO     | AI suggested: BTC-USD, ETH-USD, LTC-USD, BCH-USD, DOGE-USD
+2026-03-17 21:00:23,062 | INFO     | Analysing [cyan]BTC-USD[/cyan]...
+2026-03-17 21:00:28,664 | INFO     | BTC-USD → HOLD (confidence: 70%, risk: 60%)
+2026-03-17 21:00:28,665 | INFO     | BTC-USD: HOLD — no action.
+2026-03-17 21:00:28,666 | INFO     | Analysing [cyan]ETH-USD[/cyan]...
+2026-03-17 21:00:34,440 | INFO     | ETH-USD → BUY (confidence: 75%, risk: 65%)
+2026-03-17 21:00:34,888 | WARNING  | [red]REJECTED[/red] ETH-USD buy: Ethereum has shown recent upward momentum despite a slight pullback, and the current price is significantly below its 52-week high, indicating potential for growth. However, the available cash is insufficient to purchase even a fractional share within the client's constraints. | BROKER: {"code":40010001,"message":"qty must be \u003e 0"}
+2026-03-17 21:00:34,891 | INFO     | Analysing [cyan]LTC-USD[/cyan]...
+2026-03-17 21:00:37,806 | INFO     | LTC-USD → BUY (confidence: 70%, risk: 55%)
+2026-03-17 21:00:38,091 | WARNING  | [red]REJECTED[/red] LTC-USD buy: Litecoin has shown recent price recovery and is trading closer to its 52-week low, suggesting potential upside. The current price allows for a small position within the client's constraints. | REJECTED: Adjusted position too small after constraints.
+2026-03-17 21:00:38,094 | INFO     | Analysing [cyan]BCH-USD[/cyan]...
+2026-03-17 21:00:44,952 | INFO     | BCH-USD → HOLD (confidence: 50%, risk: 65%)
+2026-03-17 21:00:44,960 | INFO     | BCH-USD: HOLD — no action.
+2026-03-17 21:00:44,962 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-17 21:00:55,057 | INFO     | DOGE-USD → BUY (confidence: 70%, risk: 60%)
+2026-03-17 21:00:55,818 | INFO     | [green]BOUGHT[/green] 260 shares of DOGE-USD @ $0.10 — Dogecoin is currently trading near its 52-week low, and recent price stability s
+2026-03-17 21:00:55,820 | INFO     | AI exit levels for DOGE-USD: SL=15.0% TP=30.0%
+2026-03-17 21:00:55,821 | INFO     | Cycle #1 complete. Trades this cycle: 1 | Today: 1/100
+2026-03-17 21:00:55,821 | INFO     | Portfolio: cash=$105.56 | invested=$26.15 (19.8%) | total=$131.71 | P&L=$+0.00
+2026-03-17 21:00:55,822 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-17 21:05:55,840 | INFO     | === Cycle #2 at 17:05:55 ET ===
+2026-03-17 21:05:55,858 | INFO     | Refreshing portfolio prices...
+2026-03-17 21:05:56,365 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-17 21:05:59,244 | INFO     | AI suggested: BTC-USD, ETH-USD, BCH-USD, LTC-USD
+2026-03-17 21:05:59,246 | INFO     | Analysing [cyan]BTC-USD[/cyan]...
+2026-03-17 21:06:03,190 | INFO     | BTC-USD → HOLD (confidence: 70%, risk: 60%)
+2026-03-17 21:06:03,193 | INFO     | BTC-USD: HOLD — no action.
+2026-03-17 21:06:03,194 | INFO     | Analysing [cyan]ETH-USD[/cyan]...
+2026-03-17 21:06:05,543 | INFO     | ETH-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-17 21:06:05,545 | INFO     | ETH-USD: HOLD — no action.
+2026-03-17 21:06:05,545 | INFO     | Analysing [cyan]BCH-USD[/cyan]...
+2026-03-17 21:06:09,174 | INFO     | BCH-USD → HOLD (confidence: 65%, risk: 65%)
+2026-03-17 21:06:09,176 | INFO     | BCH-USD: HOLD — no action.
+2026-03-17 21:06:09,177 | INFO     | Analysing [cyan]LTC-USD[/cyan]...
+2026-03-17 21:06:12,777 | INFO     | LTC-USD → BUY (confidence: 70%, risk: 60%)
+2026-03-17 21:06:13,035 | WARNING  | [red]REJECTED[/red] LTC-USD buy: Litecoin has shown recent upward momentum with a recovery from its 3-month decline. The current price is near the lower end of its 52-week range, suggesting potential for upside. Volume is consistent, indicating stable interest. | REJECTED: Adjusted position too small after constraints.
+2026-03-17 21:06:13,037 | INFO     | Cycle #2 complete. Trades this cycle: 0 | Today: 1/100
+2026-03-17 21:06:13,038 | INFO     | Portfolio: cash=$105.56 | invested=$26.15 (19.8%) | total=$131.71 | P&L=$+0.00
+2026-03-17 21:06:13,040 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-17 21:11:13,058 | INFO     | === Cycle #3 at 17:11:13 ET ===
+2026-03-17 21:11:13,072 | INFO     | Refreshing portfolio prices...
+2026-03-17 21:11:13,565 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-17 21:11:17,843 | INFO     | AI suggested: BTC-USD, ETH-USD, BCH-USD, LTC-USD
+2026-03-17 21:11:17,845 | INFO     | Analysing [cyan]BTC-USD[/cyan]...
+2026-03-17 21:11:19,803 | INFO     | BTC-USD → HOLD (confidence: 70%, risk: 50%)
+2026-03-17 21:11:19,805 | INFO     | BTC-USD: HOLD — no action.
+2026-03-17 21:11:19,807 | INFO     | Analysing [cyan]ETH-USD[/cyan]...
+2026-03-17 21:11:23,426 | INFO     | ETH-USD → HOLD (confidence: 70%, risk: 60%)
+2026-03-17 21:11:23,431 | INFO     | ETH-USD: HOLD — no action.
+2026-03-17 21:11:23,433 | INFO     | Analysing [cyan]BCH-USD[/cyan]...
+2026-03-17 21:11:25,926 | INFO     | BCH-USD → HOLD (confidence: 65%, risk: 65%)
+2026-03-17 21:11:25,927 | INFO     | BCH-USD: HOLD — no action.
+2026-03-17 21:11:25,928 | INFO     | Analysing [cyan]LTC-USD[/cyan]...
+2026-03-17 21:11:28,727 | INFO     | LTC-USD → HOLD (confidence: 65%, risk: 55%)
+2026-03-17 21:11:28,728 | INFO     | LTC-USD: HOLD — no action.
+2026-03-17 21:11:28,730 | INFO     | Cycle #3 complete. Trades this cycle: 0 | Today: 1/100
+2026-03-17 21:11:28,731 | INFO     | Portfolio: cash=$105.56 | invested=$26.15 (19.8%) | total=$131.71 | P&L=$+0.00
+2026-03-17 21:11:28,733 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-17 21:16:28,753 | INFO     | === Cycle #4 at 17:16:28 ET ===
+2026-03-17 21:16:28,770 | INFO     | Refreshing portfolio prices...
+2026-03-17 21:16:29,287 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-17 21:16:31,078 | INFO     | AI suggested: BTC-USD, ETH-USD, BCH-USD, LTC-USD
+2026-03-17 21:16:31,079 | INFO     | Analysing [cyan]BTC-USD[/cyan]...
+2026-03-17 21:16:33,328 | INFO     | BTC-USD → HOLD (confidence: 70%, risk: 60%)
+2026-03-17 21:16:33,330 | INFO     | BTC-USD: HOLD — no action.
+2026-03-17 21:16:33,331 | INFO     | Analysing [cyan]ETH-USD[/cyan]...
+2026-03-17 21:16:35,472 | INFO     | ETH-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-17 21:16:35,474 | INFO     | ETH-USD: HOLD — no action.
+2026-03-17 21:16:35,474 | INFO     | Analysing [cyan]BCH-USD[/cyan]...
+2026-03-17 21:16:37,362 | INFO     | BCH-USD → HOLD (confidence: 60%, risk: 65%)
+2026-03-17 21:16:37,365 | INFO     | BCH-USD: HOLD — no action.
+2026-03-17 21:16:37,367 | INFO     | Analysing [cyan]LTC-USD[/cyan]...
+2026-03-17 21:16:39,889 | INFO     | LTC-USD → HOLD (confidence: 70%, risk: 60%)
+2026-03-17 21:16:39,890 | INFO     | LTC-USD: HOLD — no action.
+2026-03-17 21:16:39,890 | INFO     | Cycle #4 complete. Trades this cycle: 0 | Today: 1/100
+2026-03-17 21:16:39,891 | INFO     | Portfolio: cash=$105.56 | invested=$26.15 (19.8%) | total=$131.71 | P&L=$+0.00
+2026-03-17 21:16:39,892 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-17 21:21:39,902 | INFO     | === Cycle #5 at 17:21:39 ET ===
+2026-03-17 21:21:39,912 | INFO     | Refreshing portfolio prices...
+2026-03-17 21:21:40,377 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-17 21:21:43,722 | INFO     | AI suggested: BTC-USD, ETH-USD, BCH-USD, LTC-USD
+2026-03-17 21:21:43,724 | INFO     | Analysing [cyan]BTC-USD[/cyan]...
+2026-03-17 21:21:46,170 | INFO     | BTC-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-17 21:21:46,171 | INFO     | BTC-USD: HOLD — no action.
+2026-03-17 21:21:46,172 | INFO     | Analysing [cyan]ETH-USD[/cyan]...
+2026-03-17 21:21:49,150 | INFO     | ETH-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-17 21:21:49,152 | INFO     | ETH-USD: HOLD — no action.
+2026-03-17 21:21:49,152 | INFO     | Analysing [cyan]BCH-USD[/cyan]...
+2026-03-17 21:21:52,933 | INFO     | BCH-USD → HOLD (confidence: 65%, risk: 65%)
+2026-03-17 21:21:52,935 | INFO     | BCH-USD: HOLD — no action.
+2026-03-17 21:21:52,936 | INFO     | Analysing [cyan]LTC-USD[/cyan]...
+2026-03-17 21:21:55,452 | INFO     | LTC-USD → BUY (confidence: 70%, risk: 60%)
+2026-03-17 21:21:55,704 | WARNING  | [red]REJECTED[/red] LTC-USD buy: Litecoin is currently trading near its 52-week low, showing potential for upside. Recent price action indicates a short-term upward trend, and the current price allows for a small position within the client's risk constraints. | REJECTED: Adjusted position too small after constraints.
+2026-03-17 21:21:55,707 | INFO     | Cycle #5 complete. Trades this cycle: 0 | Today: 1/100
+2026-03-17 21:21:55,709 | INFO     | Portfolio: cash=$105.56 | invested=$26.15 (19.8%) | total=$131.71 | P&L=$+0.00
+2026-03-17 21:21:55,710 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-17 21:26:55,717 | INFO     | === Cycle #6 at 17:26:55 ET ===
+2026-03-17 21:26:55,749 | INFO     | Refreshing portfolio prices...
+2026-03-17 21:26:56,271 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-17 21:26:58,440 | INFO     | AI suggested: ETH-USD, BTC-USD, LTC-USD
+2026-03-17 21:26:58,441 | INFO     | Analysing [cyan]ETH-USD[/cyan]...
+2026-03-17 21:27:00,429 | INFO     | ETH-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-17 21:27:00,433 | INFO     | ETH-USD: HOLD — no action.
+2026-03-17 21:27:00,433 | INFO     | Analysing [cyan]BTC-USD[/cyan]...
+2026-03-17 21:27:02,676 | INFO     | BTC-USD → HOLD (confidence: 70%, risk: 60%)
+2026-03-17 21:27:02,678 | INFO     | BTC-USD: HOLD — no action.
+2026-03-17 21:27:02,679 | INFO     | Analysing [cyan]LTC-USD[/cyan]...
+2026-03-17 21:27:05,649 | INFO     | LTC-USD → BUY (confidence: 70%, risk: 60%)
+2026-03-17 21:27:05,910 | WARNING  | [red]REJECTED[/red] LTC-USD buy: Litecoin has shown a recent upward trend with a price increase from $55.31 to $58.57. Despite a 3-month decline, the current market sentiment and volume suggest a potential rebound. The current price is significantly below the 52-week high, offering a buying opportunity. | REJECTED: Adjusted position too small after constraints.
+2026-03-17 21:27:05,914 | INFO     | Cycle #6 complete. Trades this cycle: 0 | Today: 1/100
+2026-03-17 21:27:05,915 | INFO     | Portfolio: cash=$105.56 | invested=$26.15 (19.8%) | total=$131.71 | P&L=$+0.00
+2026-03-17 21:27:05,916 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-17 21:32:05,929 | INFO     | === Cycle #7 at 17:32:05 ET ===
+2026-03-17 21:32:05,942 | INFO     | Refreshing portfolio prices...
+2026-03-17 21:32:06,441 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-17 21:32:09,383 | INFO     | AI suggested: BTC-USD, ETH-USD, BCH-USD, LTC-USD
+2026-03-17 21:32:09,385 | INFO     | Analysing [cyan]BTC-USD[/cyan]...
+2026-03-17 21:32:12,018 | INFO     | BTC-USD → HOLD (confidence: 70%, risk: 60%)
+2026-03-17 21:32:12,020 | INFO     | BTC-USD: HOLD — no action.
+2026-03-17 21:32:12,021 | INFO     | Analysing [cyan]ETH-USD[/cyan]...
+2026-03-17 21:32:13,952 | INFO     | ETH-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-17 21:32:13,953 | INFO     | ETH-USD: HOLD — no action.
+2026-03-17 21:32:13,954 | INFO     | Analysing [cyan]BCH-USD[/cyan]...
+2026-03-17 21:32:16,594 | INFO     | BCH-USD → HOLD (confidence: 65%, risk: 60%)
+2026-03-17 21:32:16,596 | INFO     | BCH-USD: HOLD — no action.
+2026-03-17 21:32:16,597 | INFO     | Analysing [cyan]LTC-USD[/cyan]...
+2026-03-17 21:32:18,646 | INFO     | LTC-USD → HOLD (confidence: 65%, risk: 55%)
+2026-03-17 21:32:18,649 | INFO     | LTC-USD: HOLD — no action.
+2026-03-17 21:32:18,650 | INFO     | Cycle #7 complete. Trades this cycle: 0 | Today: 1/100
+2026-03-17 21:32:18,651 | INFO     | Portfolio: cash=$105.56 | invested=$26.15 (19.8%) | total=$131.71 | P&L=$+0.00
+2026-03-17 21:32:18,652 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-17 21:36:03,611 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-17 21:36:04,095 | INFO     | Daemon stopped.
+2026-03-18 09:16:16,729 | INFO     | Daemon started. Interval: 5 min
+2026-03-18 09:16:16,733 | INFO     | === Cycle #1 at 05:16:16 ET ===
+2026-03-18 09:16:16,734 | INFO     | Refreshing portfolio prices...
+2026-03-18 09:16:16,917 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-18 09:16:20,347 | INFO     | AI suggested: AAPL, NVDA, ETH-USD, TSLA, LTC-USD
+2026-03-18 09:16:20,349 | INFO     | Analysing [cyan]AAPL[/cyan]...
+2026-03-18 09:16:23,876 | INFO     | AAPL → HOLD (confidence: 70%, risk: 35%)
+2026-03-18 09:16:23,881 | INFO     | AAPL: HOLD — no action.
+2026-03-18 09:16:23,882 | INFO     | Analysing [cyan]NVDA[/cyan]...
+2026-03-18 09:16:27,287 | INFO     | NVDA → HOLD (confidence: 70%, risk: 35%)
+2026-03-18 09:16:27,289 | INFO     | NVDA: HOLD — no action.
+2026-03-18 09:16:27,291 | INFO     | Analysing [cyan]ETH-USD[/cyan]...
+2026-03-18 09:16:29,909 | INFO     | ETH-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-18 09:16:29,912 | INFO     | ETH-USD: HOLD — no action.
+2026-03-18 09:16:29,913 | INFO     | Analysing [cyan]TSLA[/cyan]...
+2026-03-18 09:16:32,962 | INFO     | TSLA → HOLD (confidence: 65%, risk: 55%)
+2026-03-18 09:16:32,965 | INFO     | TSLA: HOLD — no action.
+2026-03-18 09:16:32,965 | INFO     | Analysing [cyan]LTC-USD[/cyan]...
+2026-03-18 09:16:35,847 | INFO     | LTC-USD → HOLD (confidence: 55%, risk: 60%)
+2026-03-18 09:16:35,849 | INFO     | LTC-USD: HOLD — no action.
+2026-03-18 09:16:35,851 | INFO     | Cycle #1 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-18 09:16:35,852 | INFO     | Portfolio: cash=$105.56 | invested=$25.92 (24.6%) | total=$131.48 | P&L=$-0.22
+2026-03-18 09:16:35,853 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-18 09:21:35,861 | INFO     | === Cycle #2 at 05:21:35 ET ===
+2026-03-18 09:21:35,871 | INFO     | Refreshing portfolio prices...
+2026-03-18 09:21:36,320 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-18 09:21:40,464 | INFO     | AI suggested: NVDA, AAPL, TSLA, ETH-USD, LTC-USD
+2026-03-18 09:21:40,466 | INFO     | Analysing [cyan]NVDA[/cyan]...
+2026-03-18 09:21:42,731 | INFO     | NVDA → HOLD (confidence: 70%, risk: 35%)
+2026-03-18 09:21:42,734 | INFO     | NVDA: HOLD — no action.
+2026-03-18 09:21:42,735 | INFO     | Analysing [cyan]AAPL[/cyan]...
+2026-03-18 09:21:45,851 | INFO     | AAPL → HOLD (confidence: 65%, risk: 35%)
+2026-03-18 09:21:45,860 | INFO     | AAPL: HOLD — no action.
+2026-03-18 09:21:45,860 | INFO     | Analysing [cyan]TSLA[/cyan]...
+2026-03-18 09:21:49,445 | INFO     | TSLA → HOLD (confidence: 65%, risk: 45%)
+2026-03-18 09:21:49,447 | INFO     | TSLA: HOLD — no action.
+2026-03-18 09:21:49,448 | INFO     | Analysing [cyan]ETH-USD[/cyan]...
+2026-03-18 09:21:51,667 | INFO     | ETH-USD → BUY (confidence: 70%, risk: 60%)
+2026-03-18 09:21:52,085 | WARNING  | [red]REJECTED[/red] ETH-USD buy: Ethereum has shown a recent upward trend with a significant volume increase, indicating positive market sentiment. Despite the 3-month decline, the current price is above recent lows, suggesting a potential rebound. The current allocation allows for a small position within risk limits. | BROKER: {"code":40010001,"message":"qty must be \u003e 0"}
+2026-03-18 09:21:52,087 | INFO     | Analysing [cyan]LTC-USD[/cyan]...
+2026-03-18 09:21:54,171 | INFO     | LTC-USD → HOLD (confidence: 50%, risk: 60%)
+2026-03-18 09:21:54,174 | INFO     | LTC-USD: HOLD — no action.
+2026-03-18 09:21:54,175 | INFO     | Cycle #2 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-18 09:21:54,175 | INFO     | Portfolio: cash=$105.56 | invested=$25.92 (24.6%) | total=$131.48 | P&L=$-0.22
+2026-03-18 09:21:54,176 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-18 09:26:54,190 | INFO     | === Cycle #3 at 05:26:54 ET ===
+2026-03-18 09:26:54,197 | INFO     | Refreshing portfolio prices...
+2026-03-18 09:26:54,738 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-18 09:26:57,636 | INFO     | AI suggested: NVDA, AAPL, ETH-USD, TSLA, LTC-USD
+2026-03-18 09:26:57,637 | INFO     | Analysing [cyan]NVDA[/cyan]...
+2026-03-18 09:27:00,214 | INFO     | NVDA → HOLD (confidence: 70%, risk: 35%)
+2026-03-18 09:27:00,215 | INFO     | NVDA: HOLD — no action.
+2026-03-18 09:27:00,216 | INFO     | Analysing [cyan]AAPL[/cyan]...
+2026-03-18 09:27:05,016 | INFO     | AAPL → HOLD (confidence: 65%, risk: 35%)
+2026-03-18 09:27:05,033 | INFO     | AAPL: HOLD — no action.
+2026-03-18 09:27:05,039 | INFO     | Analysing [cyan]ETH-USD[/cyan]...
+2026-03-18 09:27:07,876 | INFO     | ETH-USD → HOLD (confidence: 65%, risk: 65%)
+2026-03-18 09:27:07,878 | INFO     | ETH-USD: HOLD — no action.
+2026-03-18 09:27:07,879 | INFO     | Analysing [cyan]TSLA[/cyan]...
+2026-03-18 09:28:58,807 | INFO     | TSLA → HOLD (confidence: 65%, risk: 55%)
+2026-03-18 09:28:58,811 | INFO     | TSLA: HOLD — no action.
+2026-03-18 09:28:58,811 | INFO     | Analysing [cyan]LTC-USD[/cyan]...
+2026-03-18 09:29:02,360 | INFO     | LTC-USD → HOLD (confidence: 60%, risk: 55%)
+2026-03-18 09:29:02,362 | INFO     | LTC-USD: HOLD — no action.
+2026-03-18 09:29:02,363 | INFO     | Cycle #3 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-18 09:29:02,364 | INFO     | Portfolio: cash=$105.56 | invested=$25.92 (24.6%) | total=$131.48 | P&L=$-0.22
+2026-03-18 09:29:02,365 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-18 09:29:24,011 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-18 09:29:24,452 | INFO     | Daemon stopped.
+2026-03-18 12:03:58,613 | INFO     | Daemon started. Interval: 5 min
+2026-03-18 12:03:58,617 | INFO     | === Cycle #1 at 08:03:58 ET ===
+2026-03-18 12:03:58,617 | INFO     | Refreshing portfolio prices...
+2026-03-18 12:03:58,818 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-18 12:04:03,363 | INFO     | AI suggested: NVDA, ETH-USD, AAPL, TSLA, BCH-USD
+2026-03-18 12:04:03,364 | INFO     | Analysing [cyan]NVDA[/cyan]...
+2026-03-18 12:04:07,887 | INFO     | NVDA → HOLD (confidence: 70%, risk: 35%)
+2026-03-18 12:04:07,889 | INFO     | NVDA: HOLD — no action.
+2026-03-18 12:04:07,889 | INFO     | Analysing [cyan]ETH-USD[/cyan]...
+2026-03-18 12:04:11,905 | INFO     | ETH-USD → BUY (confidence: 75%, risk: 65%)
+2026-03-18 12:04:12,365 | WARNING  | [red]REJECTED[/red] ETH-USD buy: Ethereum has shown a recent pullback after a strong upward trend, presenting a potential buying opportunity. The current price is closer to the recent low, and the overall market sentiment remains positive. Given the volatility, a small position is recommended. | BROKER: {"code":40010001,"message":"qty must be \u003e 0"}
+2026-03-18 12:04:12,367 | INFO     | Analysing [cyan]AAPL[/cyan]...
+2026-03-18 12:04:15,878 | INFO     | AAPL → HOLD (confidence: 65%, risk: 35%)
+2026-03-18 12:04:15,880 | INFO     | AAPL: HOLD — no action.
+2026-03-18 12:04:15,881 | INFO     | Analysing [cyan]TSLA[/cyan]...
+2026-03-18 12:04:20,072 | INFO     | TSLA → HOLD (confidence: 55%, risk: 45%)
+2026-03-18 12:04:20,074 | INFO     | TSLA: HOLD — no action.
+2026-03-18 12:04:20,074 | INFO     | Analysing [cyan]BCH-USD[/cyan]...
+2026-03-18 12:04:24,167 | INFO     | BCH-USD → HOLD (confidence: 55%, risk: 65%)
+2026-03-18 12:04:24,170 | INFO     | BCH-USD: HOLD — no action.
+2026-03-18 12:04:24,170 | INFO     | Cycle #1 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-18 12:04:24,171 | INFO     | Portfolio: cash=$105.56 | invested=$25.16 (23.8%) | total=$130.72 | P&L=$-0.98
+2026-03-18 12:04:24,172 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-18 12:09:24,186 | INFO     | === Cycle #2 at 08:09:24 ET ===
+2026-03-18 12:09:24,195 | INFO     | Refreshing portfolio prices...
+2026-03-18 12:09:24,667 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-18 12:09:29,180 | INFO     | AI suggested: NVDA, AAPL, ETH-USD, TSLA, BCH-USD
+2026-03-18 12:09:29,183 | INFO     | Analysing [cyan]NVDA[/cyan]...
+2026-03-18 12:09:33,181 | INFO     | NVDA → HOLD (confidence: 65%, risk: 35%)
+2026-03-18 12:09:33,183 | INFO     | NVDA: HOLD — no action.
+2026-03-18 12:09:33,186 | INFO     | Analysing [cyan]AAPL[/cyan]...
+2026-03-18 12:09:36,491 | INFO     | AAPL → HOLD (confidence: 65%, risk: 35%)
+2026-03-18 12:09:36,492 | INFO     | AAPL: HOLD — no action.
+2026-03-18 12:09:36,493 | INFO     | Analysing [cyan]ETH-USD[/cyan]...
+2026-03-18 12:09:40,241 | INFO     | ETH-USD → BUY (confidence: 75%, risk: 65%)
+2026-03-18 12:09:40,666 | WARNING  | [red]REJECTED[/red] ETH-USD buy: Ethereum has recently pulled back after a strong upward movement, presenting a potential buying opportunity. The overall trend remains positive with increased volume during the recent rise, suggesting continued interest. The current price is closer to the 52-week low, offering a favorable risk-reward ratio. | BROKER: {"code":40010001,"message":"qty must be \u003e 0"}
+2026-03-18 12:09:40,668 | INFO     | Analysing [cyan]TSLA[/cyan]...
+2026-03-18 12:09:44,566 | INFO     | TSLA → HOLD (confidence: 65%, risk: 55%)
+2026-03-18 12:09:44,587 | INFO     | TSLA: HOLD — no action.
+2026-03-18 12:09:44,588 | INFO     | Analysing [cyan]BCH-USD[/cyan]...
+2026-03-18 12:09:47,474 | INFO     | BCH-USD → HOLD (confidence: 55%, risk: 65%)
+2026-03-18 12:09:47,475 | INFO     | BCH-USD: HOLD — no action.
+2026-03-18 12:09:47,475 | INFO     | Cycle #2 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-18 12:09:47,476 | INFO     | Portfolio: cash=$105.56 | invested=$25.16 (23.8%) | total=$130.72 | P&L=$-0.98
+2026-03-18 12:09:47,477 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-18 12:14:47,487 | INFO     | === Cycle #3 at 08:14:47 ET ===
+2026-03-18 12:14:47,493 | INFO     | Refreshing portfolio prices...
+2026-03-18 12:14:47,975 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-18 12:14:50,917 | INFO     | AI suggested: NVDA, AAPL, ETH-USD, TSLA, LTC-USD
+2026-03-18 12:14:50,918 | INFO     | Analysing [cyan]NVDA[/cyan]...
+2026-03-18 12:14:54,143 | INFO     | NVDA → HOLD (confidence: 65%, risk: 35%)
+2026-03-18 12:14:54,144 | INFO     | NVDA: HOLD — no action.
+2026-03-18 12:14:54,145 | INFO     | Analysing [cyan]AAPL[/cyan]...
+2026-03-18 12:14:57,900 | INFO     | AAPL → HOLD (confidence: 65%, risk: 35%)
+2026-03-18 12:14:57,901 | INFO     | AAPL: HOLD — no action.
+2026-03-18 12:14:57,902 | INFO     | Analysing [cyan]ETH-USD[/cyan]...
+2026-03-18 12:15:01,432 | INFO     | ETH-USD → BUY (confidence: 75%, risk: 65%)
+2026-03-18 12:15:01,893 | WARNING  | [red]REJECTED[/red] ETH-USD buy: Ethereum has recently experienced a pullback after a strong upward trend, presenting a potential buying opportunity. The current price is closer to its 52-week low, and the recent volume suggests continued interest. Given the balanced risk profile, a small position in ETH aligns with the client's strategy. | BROKER: {"code":40010001,"message":"qty must be \u003e 0"}
+2026-03-18 12:15:01,894 | INFO     | Analysing [cyan]TSLA[/cyan]...
+2026-03-18 12:15:04,858 | INFO     | TSLA → HOLD (confidence: 65%, risk: 55%)
+2026-03-18 12:15:04,860 | INFO     | TSLA: HOLD — no action.
+2026-03-18 12:15:04,861 | INFO     | Analysing [cyan]LTC-USD[/cyan]...
+2026-03-18 12:15:07,840 | INFO     | LTC-USD → HOLD (confidence: 50%, risk: 60%)
+2026-03-18 12:15:07,842 | INFO     | LTC-USD: HOLD — no action.
+2026-03-18 12:15:07,842 | INFO     | Cycle #3 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-18 12:15:07,843 | INFO     | Portfolio: cash=$105.56 | invested=$25.16 (23.8%) | total=$130.72 | P&L=$-0.98
+2026-03-18 12:15:07,844 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-18 12:20:07,857 | INFO     | === Cycle #4 at 08:20:07 ET ===
+2026-03-18 12:20:07,865 | INFO     | Refreshing portfolio prices...
+2026-03-18 12:20:08,436 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-18 12:20:12,194 | INFO     | AI suggested: NVDA, AAPL, TSLA, ETH-USD, LTC-USD
+2026-03-18 12:20:12,196 | INFO     | Analysing [cyan]NVDA[/cyan]...
+2026-03-18 12:20:15,560 | INFO     | NVDA → HOLD (confidence: 70%, risk: 35%)
+2026-03-18 12:20:15,562 | INFO     | NVDA: HOLD — no action.
+2026-03-18 12:20:15,563 | INFO     | Analysing [cyan]AAPL[/cyan]...
+2026-03-18 12:20:21,511 | INFO     | AAPL → HOLD (confidence: 70%, risk: 35%)
+2026-03-18 12:20:21,512 | INFO     | AAPL: HOLD — no action.
+2026-03-18 12:20:21,513 | INFO     | Analysing [cyan]TSLA[/cyan]...
+2026-03-18 12:20:25,191 | INFO     | TSLA → HOLD (confidence: 65%, risk: 55%)
+2026-03-18 12:20:25,194 | INFO     | TSLA: HOLD — no action.
+2026-03-18 12:20:25,195 | INFO     | Analysing [cyan]ETH-USD[/cyan]...
+2026-03-18 12:20:29,443 | INFO     | ETH-USD → BUY (confidence: 70%, risk: 60%)
+2026-03-18 12:20:29,857 | WARNING  | [red]REJECTED[/red] ETH-USD buy: Ethereum has shown a recent price decline, but the overall trend indicates potential for recovery. The current price is near the lower end of its recent range, suggesting a buying opportunity. The market sentiment and volume support a potential rebound. | BROKER: {"code":40010001,"message":"qty must be \u003e 0"}
+2026-03-18 12:20:29,860 | INFO     | Analysing [cyan]LTC-USD[/cyan]...
+2026-03-18 12:20:33,191 | INFO     | LTC-USD → HOLD (confidence: 60%, risk: 60%)
+2026-03-18 12:20:33,194 | INFO     | LTC-USD: HOLD — no action.
+2026-03-18 12:20:33,195 | INFO     | Cycle #4 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-18 12:20:33,195 | INFO     | Portfolio: cash=$105.56 | invested=$25.16 (23.8%) | total=$130.72 | P&L=$-0.98
+2026-03-18 12:20:33,196 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-18 12:25:33,211 | INFO     | === Cycle #5 at 08:25:33 ET ===
+2026-03-18 12:25:33,221 | INFO     | Refreshing portfolio prices...
+2026-03-18 12:25:33,780 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-18 12:25:39,205 | INFO     | AI suggested: NVDA, AAPL, ETH-USD, TSLA, LTC-USD
+2026-03-18 12:25:39,206 | INFO     | Analysing [cyan]NVDA[/cyan]...
+2026-03-18 12:25:41,574 | INFO     | NVDA → HOLD (confidence: 70%, risk: 35%)
+2026-03-18 12:25:41,575 | INFO     | NVDA: HOLD — no action.
+2026-03-18 12:25:41,575 | INFO     | Analysing [cyan]AAPL[/cyan]...
+2026-03-18 12:25:44,629 | INFO     | AAPL → BUY (confidence: 70%, risk: 35%)
+2026-03-18 12:25:45,093 | WARNING  | [red]REJECTED[/red] AAPL buy: Apple's stock is trading below its 52-week high and has shown a recent downtrend, presenting a potential buying opportunity. The technology sector remains strong, and Apple's fundamentals are solid with a reasonable P/E ratio. However, due to limited available cash and the max single position value constraint, a purchase is not feasible at this time. | BROKER: {"code":40010001,"message":"qty must be \u003e 0"}
+2026-03-18 12:25:45,095 | INFO     | Analysing [cyan]ETH-USD[/cyan]...
+2026-03-18 12:25:47,826 | INFO     | ETH-USD → BUY (confidence: 70%, risk: 60%)
+2026-03-18 12:25:48,261 | WARNING  | [red]REJECTED[/red] ETH-USD buy: Ethereum has shown a recent pullback from its highs, presenting a potential buying opportunity. Despite recent volatility, the overall trend suggests a possible rebound. The current price is closer to the 52-week low than the high, indicating potential upside. | BROKER: {"code":40010001,"message":"qty must be \u003e 0"}
+2026-03-18 12:25:48,265 | INFO     | Analysing [cyan]TSLA[/cyan]...
+2026-03-18 12:25:50,739 | INFO     | TSLA → HOLD (confidence: 65%, risk: 55%)
+2026-03-18 12:25:50,746 | INFO     | TSLA: HOLD — no action.
+2026-03-18 12:25:50,747 | INFO     | Analysing [cyan]LTC-USD[/cyan]...
+2026-03-18 12:25:53,628 | INFO     | LTC-USD → BUY (confidence: 65%, risk: 55%)
+2026-03-18 12:25:54,094 | WARNING  | [red]REJECTED[/red] LTC-USD buy: Litecoin has recently experienced a price pullback and is trading near its 52-week low, which presents a potential buying opportunity given its historical price range. The recent price trend shows some recovery, and with available cash, a small position can be taken to capitalize on potential upside. | BROKER: {"code":40010001,"message":"qty must be \u003e 0"}
+2026-03-18 12:25:54,097 | INFO     | Cycle #5 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-18 12:25:54,098 | INFO     | Portfolio: cash=$105.56 | invested=$25.16 (23.8%) | total=$130.72 | P&L=$-0.98
+2026-03-18 12:25:54,099 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-18 18:02:32,625 | INFO     | Daemon started. Interval: 5 min
+2026-03-18 18:02:32,632 | INFO     | === Cycle #1 at 14:02:32 ET ===
+2026-03-18 18:02:32,633 | INFO     | Refreshing portfolio prices...
+2026-03-18 18:02:32,811 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-18 18:02:32,812 | ERROR    | Failed to get AI suggestions: 'max_position_value'
+2026-03-18 18:02:32,813 | INFO     | No tickers to analyse this cycle.
+2026-03-18 18:02:32,813 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-18 18:02:49,450 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-18 18:02:49,879 | INFO     | Daemon stopped.
+2026-03-18 18:03:03,300 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-19 16:50:03,045 | INFO     | Daemon started. Interval: 5 min
+2026-03-19 16:50:03,054 | INFO     | === Cycle #1 at 12:50:03 ET ===
+2026-03-19 16:50:03,055 | INFO     | Refreshing portfolio prices...
+2026-03-19 16:50:03,248 | WARNING  | [red]STOP-LOSS[/red] DOGEUSD at -8.25% loss (limit: 8.0%). Selling 259 shares.
+2026-03-19 16:50:04,035 | ERROR    | Failed to sell DOGEUSD: No quote data available for DOGEUSD
+2026-03-19 16:50:04,036 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-19 16:50:08,490 | INFO     | AI suggested: DOGE-USD, BCH-USD, LTC-USD
+2026-03-19 16:50:08,492 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-19 16:50:15,182 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-19 16:50:15,186 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-19 16:50:15,187 | INFO     | Analysing [cyan]BCH-USD[/cyan]...
+2026-03-19 16:50:19,538 | INFO     | BCH-USD → HOLD (confidence: 50%, risk: 60%)
+2026-03-19 16:50:19,539 | INFO     | BCH-USD: HOLD — no action.
+2026-03-19 16:50:19,540 | INFO     | Analysing [cyan]LTC-USD[/cyan]...
+2026-03-19 16:50:23,158 | INFO     | LTC-USD → HOLD (confidence: 50%, risk: 60%)
+2026-03-19 16:50:23,159 | INFO     | LTC-USD: HOLD — no action.
+2026-03-19 16:50:23,160 | INFO     | Cycle #1 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-19 16:50:23,161 | INFO     | Portfolio: cash=$105.56 | invested=$23.99 (22.7%) | total=$129.55 | P&L=$-2.16
+2026-03-19 16:50:23,161 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 16:50:59,972 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-19 16:51:00,272 | INFO     | Daemon stopped.
+2026-03-19 16:51:26,782 | INFO     | Daemon started. Interval: 5 min
+2026-03-19 16:51:26,788 | INFO     | === Cycle #1 at 12:51:26 ET ===
+2026-03-19 16:51:26,789 | INFO     | Refreshing portfolio prices...
+2026-03-19 16:51:26,969 | WARNING  | [red]STOP-LOSS[/red] DOGEUSD at -8.25% loss (limit: 8.0%). Selling 259 shares.
+2026-03-19 16:51:27,797 | ERROR    | Failed to sell DOGEUSD: No quote data available for DOGEUSD
+2026-03-19 16:51:27,799 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-19 16:51:33,338 | INFO     | AI suggested: DOGE-USD, BCH-USD, LTC-USD
+2026-03-19 16:51:33,340 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-19 16:51:37,249 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-19 16:51:37,250 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-19 16:51:37,250 | INFO     | Analysing [cyan]BCH-USD[/cyan]...
+2026-03-19 16:51:41,714 | INFO     | BCH-USD → HOLD (confidence: 50%, risk: 65%)
+2026-03-19 16:51:41,716 | INFO     | BCH-USD: HOLD — no action.
+2026-03-19 16:51:41,716 | INFO     | Analysing [cyan]LTC-USD[/cyan]...
+2026-03-19 16:51:45,902 | INFO     | LTC-USD → HOLD (confidence: 55%, risk: 60%)
+2026-03-19 16:51:45,903 | INFO     | LTC-USD: HOLD — no action.
+2026-03-19 16:51:45,904 | INFO     | Cycle #1 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-19 16:51:45,904 | INFO     | Portfolio: cash=$105.56 | invested=$23.99 (22.7%) | total=$129.55 | P&L=$-2.16
+2026-03-19 16:51:45,905 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 16:52:19,659 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-19 16:52:20,029 | INFO     | Daemon stopped.
+2026-03-19 16:52:52,358 | INFO     | Daemon started. Interval: 5 min
+2026-03-19 16:52:52,361 | INFO     | === Cycle #1 at 12:52:52 ET ===
+2026-03-19 16:52:52,362 | INFO     | Refreshing portfolio prices...
+2026-03-19 16:52:52,537 | WARNING  | [red]STOP-LOSS[/red] DOGEUSD at -8.25% loss (limit: 8.0%). Selling 259 shares.
+2026-03-19 16:52:53,112 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-19 16:52:55,363 | INFO     | AI suggested: DOGE-USD
+2026-03-19 16:52:55,387 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-19 16:53:00,170 | INFO     | DOGE-USD → HOLD (confidence: 65%, risk: 65%)
+2026-03-19 16:53:00,174 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-19 16:53:00,175 | INFO     | Cycle #1 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-19 16:53:00,176 | INFO     | Portfolio: cash=$105.56 | invested=$23.99 (22.7%) | total=$129.55 | P&L=$-2.16
+2026-03-19 16:53:00,177 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 16:58:00,191 | INFO     | === Cycle #2 at 12:58:00 ET ===
+2026-03-19 16:58:00,202 | INFO     | Refreshing portfolio prices...
+2026-03-19 16:58:00,711 | WARNING  | [red]STOP-LOSS[/red] DOGEUSD at -8.25% loss (limit: 8.0%). Selling 259 shares.
+2026-03-19 16:58:01,065 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-19 16:58:02,186 | INFO     | AI suggested: DOGE-USD
+2026-03-19 16:58:02,188 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-19 16:58:04,863 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 60%)
+2026-03-19 16:58:04,868 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-19 16:58:04,869 | INFO     | Cycle #2 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-19 16:58:04,870 | INFO     | Portfolio: cash=$105.56 | invested=$23.99 (22.7%) | total=$129.55 | P&L=$-2.16
+2026-03-19 16:58:04,871 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 17:03:04,891 | INFO     | === Cycle #3 at 13:03:04 ET ===
+2026-03-19 17:03:04,902 | INFO     | Refreshing portfolio prices...
+2026-03-19 17:03:05,362 | WARNING  | [red]STOP-LOSS[/red] DOGEUSD at -8.25% loss (limit: 8.0%). Selling 259 shares.
+2026-03-19 17:03:05,680 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-19 17:03:08,831 | INFO     | AI suggested: DOGE-USD
+2026-03-19 17:03:08,832 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-19 17:03:15,674 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 60%)
+2026-03-19 17:03:15,677 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-19 17:03:15,678 | INFO     | Cycle #3 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-19 17:03:15,680 | INFO     | Portfolio: cash=$105.56 | invested=$23.99 (22.7%) | total=$129.55 | P&L=$-2.16
+2026-03-19 17:03:15,681 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 17:20:45,929 | INFO     | === Cycle #4 at 13:20:45 ET ===
+2026-03-19 17:20:46,125 | INFO     | Refreshing portfolio prices...
+2026-03-19 17:20:47,839 | WARNING  | [red]STOP-LOSS[/red] DOGEUSD at -8.62% loss (limit: 8.0%). Selling 259 shares.
+2026-03-19 17:20:48,528 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-19 17:20:50,583 | INFO     | AI suggested: DOGE-USD
+2026-03-19 17:20:50,584 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-19 17:20:53,684 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 60%)
+2026-03-19 17:20:53,687 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-19 17:20:53,687 | INFO     | Cycle #4 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-19 17:20:53,688 | INFO     | Portfolio: cash=$105.56 | invested=$23.89 (22.6%) | total=$129.45 | P&L=$-2.25
+2026-03-19 17:20:53,688 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 17:37:02,789 | INFO     | === Cycle #5 at 13:37:02 ET ===
+2026-03-19 17:37:02,834 | INFO     | Refreshing portfolio prices...
+2026-03-19 17:37:04,229 | ERROR    | Cycle error: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [Errno 54] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/daemon.py", line 107, in start
+    self._tick()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/daemon.py", line 159, in _tick
+    self.pm.refresh_prices()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/portfolio.py", line 142, in refresh_prices
+    self._sync_from_broker()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/portfolio.py", line 153, in _sync_from_broker
+    account = self._broker.get_account()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/broker.py", line 78, in get_account
+    return alpaca_sym in self.SUPPORTED_CRYPTOS
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2026-03-19 17:37:04,546 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 17:54:30,614 | INFO     | === Cycle #6 at 13:54:30 ET ===
+2026-03-19 17:54:30,656 | INFO     | Refreshing portfolio prices...
+2026-03-19 17:54:31,778 | WARNING  | [red]STOP-LOSS[/red] DOGEUSD at -8.30% loss (limit: 8.0%). Selling 259 shares.
+2026-03-19 17:54:32,102 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-19 17:54:34,593 | INFO     | AI suggested: DOGE-USD
+2026-03-19 17:54:34,595 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-19 17:54:37,284 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-19 17:54:37,285 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-19 17:54:37,285 | INFO     | Cycle #6 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-19 17:54:37,286 | INFO     | Portfolio: cash=$105.56 | invested=$23.97 (22.7%) | total=$129.53 | P&L=$-2.17
+2026-03-19 17:54:37,287 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 18:10:17,206 | INFO     | === Cycle #7 at 14:10:17 ET ===
+2026-03-19 18:10:17,221 | INFO     | Refreshing portfolio prices...
+2026-03-19 18:10:18,774 | ERROR    | Cycle error: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [Errno 54] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/daemon.py", line 107, in start
+    self._tick()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/daemon.py", line 159, in _tick
+    self.pm.refresh_prices()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/portfolio.py", line 142, in refresh_prices
+    self._sync_from_broker()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/portfolio.py", line 153, in _sync_from_broker
+    account = self._broker.get_account()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/broker.py", line 78, in get_account
+    return alpaca_sym in self.SUPPORTED_CRYPTOS
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2026-03-19 18:10:18,823 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 18:15:18,847 | INFO     | === Cycle #8 at 14:15:18 ET ===
+2026-03-19 18:15:18,863 | INFO     | Refreshing portfolio prices...
+2026-03-19 18:15:19,371 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-19 18:15:21,047 | INFO     | AI suggested: DOGE-USD
+2026-03-19 18:15:21,048 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-19 18:15:24,908 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-19 18:15:24,909 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-19 18:15:24,909 | INFO     | Cycle #8 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-19 18:15:24,910 | INFO     | Portfolio: cash=$105.56 | invested=$24.07 (22.8%) | total=$129.63 | P&L=$-2.07
+2026-03-19 18:15:24,911 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 18:20:24,920 | INFO     | === Cycle #9 at 14:20:24 ET ===
+2026-03-19 18:20:24,926 | INFO     | Refreshing portfolio prices...
+2026-03-19 18:20:25,390 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-19 18:20:28,551 | INFO     | AI suggested: DOGE-USD
+2026-03-19 18:20:28,552 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-19 18:20:31,672 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-19 18:20:31,675 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-19 18:20:31,676 | INFO     | Cycle #9 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-19 18:20:31,677 | INFO     | Portfolio: cash=$105.56 | invested=$24.07 (22.8%) | total=$129.63 | P&L=$-2.07
+2026-03-19 18:20:31,678 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 18:25:31,696 | INFO     | === Cycle #10 at 14:25:31 ET ===
+2026-03-19 18:25:31,712 | INFO     | Refreshing portfolio prices...
+2026-03-19 18:25:32,197 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-19 18:25:34,291 | INFO     | AI suggested: DOGE-USD
+2026-03-19 18:25:34,292 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-19 18:25:37,978 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-19 18:25:37,981 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-19 18:25:37,981 | INFO     | Cycle #10 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-19 18:25:37,982 | INFO     | Portfolio: cash=$105.56 | invested=$24.09 (22.8%) | total=$129.65 | P&L=$-2.05
+2026-03-19 18:25:37,982 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 18:30:37,995 | INFO     | === Cycle #11 at 14:30:37 ET ===
+2026-03-19 18:30:38,004 | INFO     | Refreshing portfolio prices...
+2026-03-19 18:30:38,467 | WARNING  | [red]STOP-LOSS[/red] DOGEUSD at -8.15% loss (limit: 8.0%). Selling 259 shares.
+2026-03-19 18:30:38,890 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-19 18:30:40,385 | INFO     | AI suggested: DOGE-USD
+2026-03-19 18:30:40,387 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-19 18:30:45,322 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-19 18:30:45,325 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-19 18:30:45,326 | INFO     | Cycle #11 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-19 18:30:45,327 | INFO     | Portfolio: cash=$105.56 | invested=$24.02 (22.8%) | total=$129.58 | P&L=$-2.13
+2026-03-19 18:30:45,328 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 18:35:45,338 | INFO     | === Cycle #12 at 14:35:45 ET ===
+2026-03-19 18:35:45,346 | INFO     | Refreshing portfolio prices...
+2026-03-19 18:35:45,855 | WARNING  | [red]STOP-LOSS[/red] DOGEUSD at -8.28% loss (limit: 8.0%). Selling 259 shares.
+2026-03-19 18:35:47,005 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-19 18:35:49,364 | INFO     | AI suggested: DOGE-USD
+2026-03-19 18:35:49,366 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-19 18:35:54,338 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-19 18:35:54,341 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-19 18:35:54,342 | INFO     | Cycle #12 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-19 18:35:54,343 | INFO     | Portfolio: cash=$105.56 | invested=$23.98 (22.7%) | total=$129.54 | P&L=$-2.16
+2026-03-19 18:35:54,345 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 18:53:46,501 | INFO     | === Cycle #13 at 14:53:46 ET ===
+2026-03-19 18:53:46,533 | INFO     | Refreshing portfolio prices...
+2026-03-19 18:53:46,731 | ERROR    | Cycle error: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("HTTPSConnection(host='api.alpaca.markets', port=443): Failed to resolve 'api.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='api.alpaca.markets', port=443): Failed to resolve 'api.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("HTTPSConnection(host='api.alpaca.markets', port=443): Failed to resolve 'api.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/daemon.py", line 107, in start
+    self._tick()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/daemon.py", line 159, in _tick
+    self.pm.refresh_prices()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/portfolio.py", line 142, in refresh_prices
+    self._sync_from_broker()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/portfolio.py", line 153, in _sync_from_broker
+    account = self._broker.get_account()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/broker.py", line 78, in get_account
+    return alpaca_sym in self.SUPPORTED_CRYPTOS
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("HTTPSConnection(host='api.alpaca.markets', port=443): Failed to resolve 'api.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-03-19 18:53:46,845 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 19:00:04,473 | INFO     | === Cycle #14 at 15:00:04 ET ===
+2026-03-19 19:00:04,485 | INFO     | Refreshing portfolio prices...
+2026-03-19 19:00:05,396 | WARNING  | [red]STOP-LOSS[/red] DOGEUSD at -8.37% loss (limit: 8.0%). Selling 259 shares.
+2026-03-19 19:00:05,952 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-19 19:00:07,341 | INFO     | AI suggested: DOGE-USD
+2026-03-19 19:00:07,342 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-19 19:00:09,937 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-19 19:00:09,940 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-19 19:00:09,941 | INFO     | Cycle #14 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-19 19:00:09,942 | INFO     | Portfolio: cash=$105.56 | invested=$23.96 (22.7%) | total=$129.52 | P&L=$-2.19
+2026-03-19 19:00:09,944 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 19:16:42,376 | INFO     | === Cycle #15 at 15:16:42 ET ===
+2026-03-19 19:16:42,554 | INFO     | Refreshing portfolio prices...
+2026-03-19 19:16:43,237 | ERROR    | Cycle error: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [Errno 54] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/daemon.py", line 107, in start
+    self._tick()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/daemon.py", line 159, in _tick
+    self.pm.refresh_prices()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/portfolio.py", line 142, in refresh_prices
+    self._sync_from_broker()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/portfolio.py", line 153, in _sync_from_broker
+    account = self._broker.get_account()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/broker.py", line 78, in get_account
+    return alpaca_sym in self.SUPPORTED_CRYPTOS
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2026-03-19 19:16:43,248 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 19:34:24,237 | INFO     | === Cycle #16 at 15:34:24 ET ===
+2026-03-19 19:34:24,251 | INFO     | Refreshing portfolio prices...
+2026-03-19 19:34:25,259 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-19 19:34:27,688 | INFO     | AI suggested: DOGE-USD
+2026-03-19 19:34:27,689 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-19 19:34:31,089 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-19 19:34:31,093 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-19 19:34:31,094 | INFO     | Cycle #16 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-19 19:34:31,095 | INFO     | Portfolio: cash=$105.56 | invested=$24.37 (23.1%) | total=$129.93 | P&L=$-1.77
+2026-03-19 19:34:31,095 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 19:39:31,113 | INFO     | === Cycle #17 at 15:39:31 ET ===
+2026-03-19 19:39:31,130 | INFO     | Refreshing portfolio prices...
+2026-03-19 19:39:31,621 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-19 19:39:33,172 | INFO     | AI suggested: DOGE-USD
+2026-03-19 19:39:33,173 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-19 19:39:36,380 | INFO     | DOGE-USD → HOLD (confidence: 65%, risk: 65%)
+2026-03-19 19:39:36,382 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-19 19:39:36,382 | INFO     | Cycle #17 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-19 19:39:36,383 | INFO     | Portfolio: cash=$105.56 | invested=$24.37 (23.1%) | total=$129.93 | P&L=$-1.77
+2026-03-19 19:39:36,383 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 19:44:36,395 | INFO     | === Cycle #18 at 15:44:36 ET ===
+2026-03-19 19:44:36,404 | INFO     | Refreshing portfolio prices...
+2026-03-19 19:44:36,883 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-19 19:44:39,117 | INFO     | AI suggested: DOGE-USD
+2026-03-19 19:44:39,118 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-19 19:44:41,540 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-19 19:44:41,542 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-19 19:44:41,543 | INFO     | Cycle #18 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-19 19:44:41,545 | INFO     | Portfolio: cash=$105.56 | invested=$24.37 (23.1%) | total=$129.93 | P&L=$-1.77
+2026-03-19 19:44:41,546 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 19:49:41,564 | INFO     | === Cycle #19 at 15:49:41 ET ===
+2026-03-19 19:49:41,573 | INFO     | Refreshing portfolio prices...
+2026-03-19 19:49:42,040 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-19 19:49:43,502 | INFO     | AI suggested: DOGE-USD
+2026-03-19 19:49:43,503 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-19 19:49:51,180 | INFO     | DOGE-USD → HOLD (confidence: 65%, risk: 70%)
+2026-03-19 19:49:51,182 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-19 19:49:51,184 | INFO     | Cycle #19 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-19 19:49:51,185 | INFO     | Portfolio: cash=$105.56 | invested=$24.31 (23.0%) | total=$129.87 | P&L=$-1.84
+2026-03-19 19:49:51,186 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 20:01:04,629 | INFO     | === Cycle #20 at 16:01:04 ET ===
+2026-03-19 20:01:05,218 | INFO     | Refreshing portfolio prices...
+2026-03-19 20:01:05,996 | ERROR    | Cycle error: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [Errno 54] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/daemon.py", line 107, in start
+    self._tick()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/daemon.py", line 159, in _tick
+    self.pm.refresh_prices()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/portfolio.py", line 142, in refresh_prices
+    self._sync_from_broker()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/portfolio.py", line 153, in _sync_from_broker
+    account = self._broker.get_account()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/broker.py", line 78, in get_account
+    return alpaca_sym in self.SUPPORTED_CRYPTOS
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2026-03-19 20:01:06,459 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 20:17:15,858 | INFO     | === Cycle #21 at 16:17:15 ET ===
+2026-03-19 20:17:16,114 | INFO     | Refreshing portfolio prices...
+2026-03-19 20:17:17,627 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-19 20:17:22,431 | INFO     | AI suggested: DOGE-USD
+2026-03-19 20:17:22,432 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-19 20:17:25,159 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-19 20:17:25,161 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-19 20:17:25,162 | INFO     | Cycle #21 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-19 20:17:25,163 | INFO     | Portfolio: cash=$105.56 | invested=$24.24 (23.0%) | total=$129.80 | P&L=$-1.91
+2026-03-19 20:17:25,163 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 20:34:29,140 | INFO     | === Cycle #22 at 16:34:29 ET ===
+2026-03-19 20:34:29,185 | INFO     | Refreshing portfolio prices...
+2026-03-19 20:34:29,914 | ERROR    | Cycle error: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [Errno 54] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/daemon.py", line 107, in start
+    self._tick()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/daemon.py", line 159, in _tick
+    self.pm.refresh_prices()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/portfolio.py", line 142, in refresh_prices
+    self._sync_from_broker()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/portfolio.py", line 153, in _sync_from_broker
+    account = self._broker.get_account()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/broker.py", line 78, in get_account
+    return alpaca_sym in self.SUPPORTED_CRYPTOS
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2026-03-19 20:34:29,955 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 20:52:14,316 | INFO     | === Cycle #23 at 16:52:13 ET ===
+2026-03-19 20:52:14,336 | INFO     | Refreshing portfolio prices...
+2026-03-19 20:52:14,355 | ERROR    | Cycle error: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("HTTPSConnection(host='api.alpaca.markets', port=443): Failed to resolve 'api.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='api.alpaca.markets', port=443): Failed to resolve 'api.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("HTTPSConnection(host='api.alpaca.markets', port=443): Failed to resolve 'api.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/daemon.py", line 107, in start
+    self._tick()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/daemon.py", line 159, in _tick
+    self.pm.refresh_prices()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/portfolio.py", line 142, in refresh_prices
+    self._sync_from_broker()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/portfolio.py", line 153, in _sync_from_broker
+    account = self._broker.get_account()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/broker.py", line 78, in get_account
+    return alpaca_sym in self.SUPPORTED_CRYPTOS
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("HTTPSConnection(host='api.alpaca.markets', port=443): Failed to resolve 'api.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-03-19 20:52:14,379 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 21:02:06,535 | INFO     | === Cycle #24 at 17:02:06 ET ===
+2026-03-19 21:02:06,631 | INFO     | Refreshing portfolio prices...
+2026-03-19 21:02:07,274 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-19 21:02:12,009 | INFO     | AI suggested: DOGE-USD
+2026-03-19 21:02:12,011 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-19 21:02:21,393 | INFO     | DOGE-USD → HOLD (confidence: 65%, risk: 70%)
+2026-03-19 21:02:21,396 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-19 21:02:21,397 | INFO     | Cycle #24 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-19 21:02:21,398 | INFO     | Portfolio: cash=$105.56 | invested=$24.24 (23.0%) | total=$129.80 | P&L=$-1.91
+2026-03-19 21:02:21,398 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 21:18:37,284 | INFO     | === Cycle #25 at 17:18:37 ET ===
+2026-03-19 21:18:37,320 | INFO     | Refreshing portfolio prices...
+2026-03-19 21:18:39,008 | ERROR    | Cycle error: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [Errno 54] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/daemon.py", line 107, in start
+    self._tick()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/daemon.py", line 159, in _tick
+    self.pm.refresh_prices()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/portfolio.py", line 142, in refresh_prices
+    self._sync_from_broker()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/portfolio.py", line 153, in _sync_from_broker
+    account = self._broker.get_account()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/broker.py", line 78, in get_account
+    return alpaca_sym in self.SUPPORTED_CRYPTOS
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2026-03-19 21:18:39,020 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 21:23:39,028 | INFO     | === Cycle #26 at 17:23:39 ET ===
+2026-03-19 21:23:39,037 | INFO     | Refreshing portfolio prices...
+2026-03-19 21:23:39,603 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-19 21:23:40,813 | INFO     | AI suggested: DOGE-USD
+2026-03-19 21:23:40,814 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-19 21:23:43,403 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-19 21:23:43,405 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-19 21:23:43,406 | INFO     | Cycle #26 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-19 21:23:43,408 | INFO     | Portfolio: cash=$105.56 | invested=$24.24 (23.0%) | total=$129.80 | P&L=$-1.91
+2026-03-19 21:23:43,409 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 21:40:15,639 | INFO     | === Cycle #27 at 17:40:15 ET ===
+2026-03-19 21:40:16,294 | INFO     | Refreshing portfolio prices...
+2026-03-19 21:40:17,441 | ERROR    | Cycle error: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [Errno 54] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/daemon.py", line 107, in start
+    self._tick()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/daemon.py", line 159, in _tick
+    self.pm.refresh_prices()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/portfolio.py", line 142, in refresh_prices
+    self._sync_from_broker()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/portfolio.py", line 153, in _sync_from_broker
+    account = self._broker.get_account()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/broker.py", line 78, in get_account
+    return alpaca_sym in self.SUPPORTED_CRYPTOS
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2026-03-19 21:40:17,514 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 21:46:17,529 | INFO     | === Cycle #28 at 17:46:17 ET ===
+2026-03-19 21:46:17,613 | INFO     | Refreshing portfolio prices...
+2026-03-19 21:46:17,679 | ERROR    | Cycle error: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("HTTPSConnection(host='api.alpaca.markets', port=443): Failed to resolve 'api.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='api.alpaca.markets', port=443): Failed to resolve 'api.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("HTTPSConnection(host='api.alpaca.markets', port=443): Failed to resolve 'api.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/daemon.py", line 107, in start
+    self._tick()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/daemon.py", line 159, in _tick
+    self.pm.refresh_prices()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/portfolio.py", line 142, in refresh_prices
+    self._sync_from_broker()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/portfolio.py", line 153, in _sync_from_broker
+    account = self._broker.get_account()
+  File "/Users/oliverlewis/development/home/silverSauce74/stockbroker/broker.py", line 78, in get_account
+    return alpaca_sym in self.SUPPORTED_CRYPTOS
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/oliverlewis/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("HTTPSConnection(host='api.alpaca.markets', port=443): Failed to resolve 'api.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-03-19 21:46:17,721 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-19 21:46:39,658 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-19 21:46:39,995 | INFO     | Daemon stopped.
+2026-03-20 10:33:12,702 | INFO     | Daemon started. Interval: 5 min
+2026-03-20 10:33:12,704 | INFO     | === Cycle #1 at 06:33:12 ET ===
+2026-03-20 10:33:12,706 | INFO     | Refreshing portfolio prices...
+2026-03-20 10:33:12,892 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-20 10:33:15,272 | INFO     | AI suggested: DOGE-USD
+2026-03-20 10:33:15,273 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-20 10:33:18,623 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-20 10:33:18,624 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-20 10:33:18,625 | INFO     | Cycle #1 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-20 10:33:18,625 | INFO     | Portfolio: cash=$105.56 | invested=$24.29 (23.0%) | total=$129.85 | P&L=$-1.86
+2026-03-20 10:33:18,626 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-20 10:38:18,638 | INFO     | === Cycle #2 at 06:38:18 ET ===
+2026-03-20 10:38:18,649 | INFO     | Refreshing portfolio prices...
+2026-03-20 10:38:19,124 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-20 10:38:21,280 | INFO     | AI suggested: DOGE-USD
+2026-03-20 10:38:21,280 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-20 10:38:25,121 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-20 10:38:25,124 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-20 10:38:25,125 | INFO     | Cycle #2 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-20 10:38:25,125 | INFO     | Portfolio: cash=$105.56 | invested=$24.29 (23.0%) | total=$129.85 | P&L=$-1.86
+2026-03-20 10:38:25,126 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-20 10:43:25,132 | INFO     | === Cycle #3 at 06:43:25 ET ===
+2026-03-20 10:43:25,140 | INFO     | Refreshing portfolio prices...
+2026-03-20 10:43:25,629 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-20 10:43:29,546 | INFO     | AI suggested: DOGE-USD, F, GE, T, PFE
+2026-03-20 10:43:29,548 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-20 10:43:32,696 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-20 10:43:32,698 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-20 10:43:32,699 | INFO     | Analysing [cyan]F[/cyan]...
+2026-03-20 10:43:35,652 | INFO     | F → BUY (confidence: 70%, risk: 35%)
+2026-03-20 10:43:35,907 | WARNING  | [red]REJECTED[/red] F buy: Ford's stock is near its 52-week low with a high dividend yield, suggesting potential for recovery. The recent price decline and volume indicate a possible buying opportunity in the Consumer Cyclical sector, which aligns with a balanced risk profile. | REJECTED: Adjusted position too small after constraints.
+2026-03-20 10:43:35,908 | INFO     | Analysing [cyan]GE[/cyan]...
+2026-03-20 10:43:38,729 | INFO     | GE → HOLD (confidence: 70%, risk: 40%)
+2026-03-20 10:43:38,730 | INFO     | GE: HOLD — no action.
+2026-03-20 10:43:38,731 | INFO     | Analysing [cyan]T[/cyan]...
+2026-03-20 10:43:41,252 | INFO     | T → BUY (confidence: 75%, risk: 30%)
+2026-03-20 10:43:41,674 | WARNING  | [red]REJECTED[/red] T buy: AT&T is showing a positive trend with a 15.49% increase over the past 3 months and a strong dividend yield of 4.0%. However, the current price of $27.74 exceeds the max single position value of $21.11, preventing a purchase. | BROKER: {"code":40010001,"message":"qty must be \u003e 0"}
+2026-03-20 10:43:41,676 | INFO     | Analysing [cyan]PFE[/cyan]...
+2026-03-20 10:43:44,327 | INFO     | PFE → BUY (confidence: 75%, risk: 30%)
+2026-03-20 10:43:44,803 | WARNING  | [red]REJECTED[/red] PFE buy: Pfizer is showing a positive trend with a recent price increase and is near its 52-week high. The stock has a stable dividend yield and the healthcare sector is generally resilient. However, the current cash available limits the ability to buy a meaningful number of shares within the position limit. | BROKER: {"code":40010001,"message":"qty must be \u003e 0"}
+2026-03-20 10:43:44,805 | INFO     | Cycle #3 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-20 10:43:44,805 | INFO     | Portfolio: cash=$105.56 | invested=$24.29 (23.0%) | total=$129.85 | P&L=$-1.86
+2026-03-20 10:43:44,806 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-20 10:48:44,820 | INFO     | === Cycle #4 at 06:48:44 ET ===
+2026-03-20 10:48:44,826 | INFO     | Refreshing portfolio prices...
+2026-03-20 10:48:45,275 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-20 10:48:50,646 | INFO     | AI suggested: DOGE-USD, F, GE, T, PFE
+2026-03-20 10:48:50,648 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-20 10:48:54,342 | INFO     | DOGE-USD → HOLD (confidence: 65%, risk: 70%)
+2026-03-20 10:48:54,343 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-20 10:48:54,343 | INFO     | Analysing [cyan]F[/cyan]...
+2026-03-20 10:48:57,682 | INFO     | F → HOLD (confidence: 65%, risk: 35%)
+2026-03-20 10:48:57,687 | INFO     | F: HOLD — no action.
+2026-03-20 10:48:57,688 | INFO     | Analysing [cyan]GE[/cyan]...
+2026-03-20 10:49:02,131 | INFO     | GE → HOLD (confidence: 70%, risk: 40%)
+2026-03-20 10:49:02,133 | INFO     | GE: HOLD — no action.
+2026-03-20 10:49:02,133 | INFO     | Analysing [cyan]T[/cyan]...
+2026-03-20 10:49:04,939 | INFO     | T → BUY (confidence: 75%, risk: 35%)
+2026-03-20 10:49:05,392 | WARNING  | [red]REJECTED[/red] T buy: AT&T shows a strong upward trend with a 15.49% increase over the last 3 months and a stable dividend yield. However, the current price of $27.74 exceeds the max single position value of $21.11, so no shares can be purchased. | BROKER: {"code":40010001,"message":"qty must be \u003e 0"}
+2026-03-20 10:49:05,393 | INFO     | Analysing [cyan]PFE[/cyan]...
+2026-03-20 10:49:10,727 | INFO     | PFE → BUY (confidence: 75%, risk: 30%)
+2026-03-20 10:49:11,176 | WARNING  | [red]REJECTED[/red] PFE buy: Pfizer's stock has shown a positive trend with a 10.55% increase over the past 3 months and is trading near its 52-week high. The healthcare sector remains stable, and the stock offers a strong dividend yield. However, the current cash available is insufficient to buy even one share while respecting the max single position value limit. | BROKER: {"code":40010001,"message":"qty must be \u003e 0"}
+2026-03-20 10:49:11,177 | INFO     | Cycle #4 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-20 10:49:11,178 | INFO     | Portfolio: cash=$105.56 | invested=$24.29 (23.0%) | total=$129.85 | P&L=$-1.86
+2026-03-20 10:49:11,178 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-20 10:54:11,182 | INFO     | === Cycle #5 at 06:54:11 ET ===
+2026-03-20 10:54:11,189 | INFO     | Refreshing portfolio prices...
+2026-03-20 10:54:11,664 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-20 10:54:13,859 | INFO     | AI suggested: DOGE-USD
+2026-03-20 10:54:13,860 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-20 10:54:16,141 | INFO     | DOGE-USD → HOLD (confidence: 65%, risk: 70%)
+2026-03-20 10:54:16,142 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-20 10:54:16,142 | INFO     | Cycle #5 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-20 10:54:16,143 | INFO     | Portfolio: cash=$105.56 | invested=$24.29 (23.0%) | total=$129.85 | P&L=$-1.86
+2026-03-20 10:54:16,144 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-20 10:59:16,151 | INFO     | === Cycle #6 at 06:59:16 ET ===
+2026-03-20 10:59:16,158 | INFO     | Refreshing portfolio prices...
+2026-03-20 10:59:16,604 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-20 10:59:18,466 | INFO     | AI suggested: DOGE-USD, BCH-USD, LTC-USD
+2026-03-20 10:59:18,467 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-20 10:59:21,210 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 60%)
+2026-03-20 10:59:21,212 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-20 10:59:21,212 | INFO     | Analysing [cyan]BCH-USD[/cyan]...
+2026-03-20 10:59:24,437 | INFO     | BCH-USD → HOLD (confidence: 55%, risk: 65%)
+2026-03-20 10:59:24,438 | INFO     | BCH-USD: HOLD — no action.
+2026-03-20 10:59:24,439 | INFO     | Analysing [cyan]LTC-USD[/cyan]...
+2026-03-20 10:59:27,658 | INFO     | LTC-USD → HOLD (confidence: 50%, risk: 60%)
+2026-03-20 10:59:27,659 | INFO     | LTC-USD: HOLD — no action.
+2026-03-20 10:59:27,660 | INFO     | Cycle #6 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-20 10:59:27,661 | INFO     | Portfolio: cash=$105.56 | invested=$24.29 (23.0%) | total=$129.85 | P&L=$-1.86
+2026-03-20 10:59:27,662 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-20 11:04:27,679 | INFO     | === Cycle #7 at 07:04:27 ET ===
+2026-03-20 11:04:27,704 | INFO     | Refreshing portfolio prices...
+2026-03-20 11:04:28,190 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-20 11:04:32,671 | INFO     | AI suggested: DOGE-USD, LTC-USD, F, GE, T
+2026-03-20 11:04:32,673 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-20 11:04:36,077 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-20 11:04:36,079 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-20 11:04:36,080 | INFO     | Analysing [cyan]LTC-USD[/cyan]...
+2026-03-20 11:04:39,649 | INFO     | LTC-USD → HOLD (confidence: 50%, risk: 60%)
+2026-03-20 11:04:39,652 | INFO     | LTC-USD: HOLD — no action.
+2026-03-20 11:04:39,653 | INFO     | Analysing [cyan]F[/cyan]...
+2026-03-20 11:04:42,974 | INFO     | F → BUY (confidence: 70%, risk: 40%)
+2026-03-20 11:04:43,244 | WARNING  | [red]REJECTED[/red] F buy: Ford's stock is near its 52-week low and has a high dividend yield, making it attractive for a balanced portfolio. Recent price stabilization and high trading volume suggest potential for recovery. | REJECTED: Adjusted position too small after constraints.
+2026-03-20 11:04:43,247 | INFO     | Analysing [cyan]GE[/cyan]...
+2026-03-20 11:04:47,294 | INFO     | GE → HOLD (confidence: 70%, risk: 40%)
+2026-03-20 11:04:47,296 | INFO     | GE: HOLD — no action.
+2026-03-20 11:04:47,297 | INFO     | Analysing [cyan]T[/cyan]...
+2026-03-20 11:04:50,338 | INFO     | T → BUY (confidence: 75%, risk: 30%)
+2026-03-20 11:04:50,810 | WARNING  | [red]REJECTED[/red] T buy: AT&T is showing a positive 3-month change and is trading near its 52-week high, indicating potential for further growth. However, the current cash available does not allow for a meaningful position within the single-position limit. | BROKER: {"code":40010001,"message":"qty must be \u003e 0"}
+2026-03-20 11:04:50,813 | INFO     | Cycle #7 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-20 11:04:50,814 | INFO     | Portfolio: cash=$105.56 | invested=$24.29 (23.0%) | total=$129.85 | P&L=$-1.86
+2026-03-20 11:04:50,816 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-20 11:09:50,836 | INFO     | === Cycle #8 at 07:09:50 ET ===
+2026-03-20 11:09:50,853 | INFO     | Refreshing portfolio prices...
+2026-03-20 11:09:51,551 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-20 11:09:55,699 | INFO     | AI suggested: DOGE-USD, F, GE, T, PFE
+2026-03-20 11:09:55,700 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-20 11:09:58,404 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-20 11:09:58,407 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-20 11:09:58,407 | INFO     | Analysing [cyan]F[/cyan]...
+2026-03-20 11:10:05,645 | INFO     | F → BUY (confidence: 70%, risk: 40%)
+2026-03-20 11:10:05,889 | WARNING  | [red]REJECTED[/red] F buy: Ford's stock is currently trading near its 52-week low, offering a potential value opportunity. The stock's recent price decline and high dividend yield make it attractive for a balanced portfolio. The consumer cyclical sector may recover as economic conditions stabilize. | REJECTED: Adjusted position too small after constraints.
+2026-03-20 11:10:05,890 | INFO     | Analysing [cyan]GE[/cyan]...
+2026-03-20 11:10:12,963 | INFO     | GE → HOLD (confidence: 70%, risk: 45%)
+2026-03-20 11:10:12,967 | INFO     | GE: HOLD — no action.
+2026-03-20 11:10:12,968 | INFO     | Analysing [cyan]T[/cyan]...
+2026-03-20 11:10:15,656 | INFO     | T → HOLD (confidence: 70%, risk: 30%)
+2026-03-20 11:10:15,657 | INFO     | T: HOLD — no action.
+2026-03-20 11:10:15,658 | INFO     | Analysing [cyan]PFE[/cyan]...
+2026-03-20 11:10:19,074 | INFO     | PFE → BUY (confidence: 75%, risk: 30%)
+2026-03-20 11:10:19,541 | WARNING  | [red]REJECTED[/red] PFE buy: Pfizer is showing a positive trend with a recent price increase and strong dividend yield. However, the current price is too high to purchase a meaningful position within the single-position limit of $21.11. | BROKER: {"code":40010001,"message":"qty must be \u003e 0"}
+2026-03-20 11:10:19,543 | INFO     | Cycle #8 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-20 11:10:19,543 | INFO     | Portfolio: cash=$105.56 | invested=$24.29 (23.0%) | total=$129.85 | P&L=$-1.86
+2026-03-20 11:10:19,544 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-20 11:15:19,563 | INFO     | === Cycle #9 at 07:15:19 ET ===
+2026-03-20 11:15:19,584 | INFO     | Refreshing portfolio prices...
+2026-03-20 11:15:20,091 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-20 11:15:21,594 | INFO     | AI suggested: DOGE-USD
+2026-03-20 11:15:21,595 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-20 11:15:23,987 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-20 11:15:23,988 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-20 11:15:23,988 | INFO     | Cycle #9 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-20 11:15:23,989 | INFO     | Portfolio: cash=$105.56 | invested=$24.29 (23.0%) | total=$129.85 | P&L=$-1.86
+2026-03-20 11:15:23,989 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-20 11:20:24,009 | INFO     | === Cycle #10 at 07:20:23 ET ===
+2026-03-20 11:20:24,023 | INFO     | Refreshing portfolio prices...
+2026-03-20 11:20:24,493 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-20 11:20:28,321 | INFO     | AI suggested: DOGE-USD, BCH-USD, F, GE, T
+2026-03-20 11:20:28,321 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-20 11:20:32,030 | INFO     | DOGE-USD → HOLD (confidence: 65%, risk: 70%)
+2026-03-20 11:20:32,034 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-20 11:20:32,034 | INFO     | Analysing [cyan]BCH-USD[/cyan]...
+2026-03-20 11:20:35,206 | INFO     | BCH-USD → HOLD (confidence: 55%, risk: 65%)
+2026-03-20 11:20:35,213 | INFO     | BCH-USD: HOLD — no action.
+2026-03-20 11:20:35,214 | INFO     | Analysing [cyan]F[/cyan]...
+2026-03-20 11:20:38,719 | INFO     | F → BUY (confidence: 70%, risk: 35%)
+2026-03-20 11:20:38,989 | WARNING  | [red]REJECTED[/red] F buy: Ford's stock is near its 52-week low, offering a potential value opportunity. Despite recent declines, the dividend yield is attractive, and the stock's volatility is moderate for a balanced risk profile. | REJECTED: Adjusted position too small after constraints.
+2026-03-20 11:20:38,991 | INFO     | Analysing [cyan]GE[/cyan]...
+2026-03-20 11:20:43,696 | INFO     | GE → HOLD (confidence: 65%, risk: 40%)
+2026-03-20 11:20:43,697 | INFO     | GE: HOLD — no action.
+2026-03-20 11:20:43,698 | INFO     | Analysing [cyan]T[/cyan]...
+2026-03-20 11:20:46,276 | INFO     | T → BUY (confidence: 75%, risk: 35%)
+2026-03-20 11:20:46,709 | WARNING  | [red]REJECTED[/red] T buy: AT&T shows a positive 3-month trend with a stable dividend yield and a low P/E ratio, indicating value. However, the current price exceeds the max single position value limit. | BROKER: {"code":40010001,"message":"qty must be \u003e 0"}
+2026-03-20 11:20:46,710 | INFO     | Cycle #10 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-20 11:20:46,710 | INFO     | Portfolio: cash=$105.56 | invested=$24.29 (23.0%) | total=$129.85 | P&L=$-1.86
+2026-03-20 11:20:46,711 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-20 11:25:46,720 | INFO     | === Cycle #11 at 07:25:46 ET ===
+2026-03-20 11:25:46,732 | INFO     | Refreshing portfolio prices...
+2026-03-20 11:25:47,215 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-20 11:25:52,248 | INFO     | AI suggested: DOGE-USD, LTC-USD, F, T, GE
+2026-03-20 11:25:52,250 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-20 11:25:54,614 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-20 11:25:54,616 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-20 11:25:54,617 | INFO     | Analysing [cyan]LTC-USD[/cyan]...
+2026-03-20 11:25:58,051 | INFO     | LTC-USD → HOLD (confidence: 65%, risk: 55%)
+2026-03-20 11:25:58,053 | INFO     | LTC-USD: HOLD — no action.
+2026-03-20 11:25:58,054 | INFO     | Analysing [cyan]F[/cyan]...
+2026-03-20 11:26:00,815 | INFO     | F → BUY (confidence: 70%, risk: 40%)
+2026-03-20 11:26:01,115 | WARNING  | [red]REJECTED[/red] F buy: Ford's stock is near its 52-week low and offers a high dividend yield, making it attractive for a balanced portfolio. The recent price decline and sector trends suggest a potential rebound. The stock's volatility is moderate, aligning with the client's risk profile. | REJECTED: Adjusted position too small after constraints.
+2026-03-20 11:26:01,116 | INFO     | Analysing [cyan]T[/cyan]...
+2026-03-20 11:26:03,494 | INFO     | T → BUY (confidence: 75%, risk: 30%)
+2026-03-20 11:26:04,112 | WARNING  | [red]REJECTED[/red] T buy: AT&T has shown a positive 3-month change of 15.49% and is trading near its 52-week high, indicating strong recent performance. The stock has a low P/E ratio and a solid dividend yield, making it attractive for a balanced portfolio. However, the current cash available does not allow for a meaningful position within the max single position value constraint. | BROKER: {"code":40010001,"message":"qty must be \u003e 0"}
+2026-03-20 11:26:04,115 | INFO     | Analysing [cyan]GE[/cyan]...
+2026-03-20 11:26:06,262 | INFO     | GE → HOLD (confidence: 70%, risk: 40%)
+2026-03-20 11:26:06,264 | INFO     | GE: HOLD — no action.
+2026-03-20 11:26:06,266 | INFO     | Cycle #11 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-20 11:26:06,267 | INFO     | Portfolio: cash=$105.56 | invested=$24.29 (23.0%) | total=$129.85 | P&L=$-1.86
+2026-03-20 11:26:06,269 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-20 11:31:06,278 | INFO     | === Cycle #12 at 07:31:06 ET ===
+2026-03-20 11:31:06,291 | INFO     | Refreshing portfolio prices...
+2026-03-20 11:31:06,738 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-20 11:31:08,681 | INFO     | AI suggested: DOGE-USD
+2026-03-20 11:31:08,683 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-20 11:31:12,575 | INFO     | DOGE-USD → HOLD (confidence: 70%, risk: 65%)
+2026-03-20 11:31:12,576 | INFO     | DOGE-USD: HOLD — no action.
+2026-03-20 11:31:12,577 | INFO     | Cycle #12 complete. Trades this cycle: 0 | Today: 0/100
+2026-03-20 11:31:12,578 | INFO     | Portfolio: cash=$105.56 | invested=$24.29 (23.0%) | total=$129.85 | P&L=$-1.86
+2026-03-20 11:31:12,578 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-20 11:33:23,390 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-20 11:33:24,222 | INFO     | Daemon stopped.
+2026-03-20 11:34:04,893 | INFO     | Daemon started. Interval: 5 min
+2026-03-20 11:34:04,899 | INFO     | === Cycle #1 at 07:34:04 ET ===
+2026-03-20 11:34:04,900 | INFO     | Refreshing portfolio prices...
+2026-03-20 11:34:05,081 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-20 11:34:06,569 | INFO     | AI suggested: DOGE-USD
+2026-03-20 11:34:06,570 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-20 11:34:09,393 | INFO     | DOGE-USD → BUY (confidence: 75%, risk: 70%)
+2026-03-20 11:34:10,122 | INFO     | [green]BOUGHT[/green] 22 shares of DOGE-USD @ $0.09 — Dogecoin is currently trading near its 52-week low with a recent downward trend,
+2026-03-20 11:34:10,123 | INFO     | AI exit levels for DOGE-USD: SL=15.0% TP=40.0%
+2026-03-20 11:34:10,123 | INFO     | Cycle #1 complete. Trades this cycle: 1 | Today: 1/100
+2026-03-20 11:34:10,124 | INFO     | Portfolio: cash=$103.48 | invested=$26.56 (25.2%) | total=$130.04 | P&L=$-1.66
+2026-03-20 11:34:10,125 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-20 11:39:10,139 | INFO     | === Cycle #2 at 07:39:10 ET ===
+2026-03-20 11:39:10,154 | INFO     | Refreshing portfolio prices...
+2026-03-20 11:39:10,641 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-20 11:39:11,990 | INFO     | AI suggested: DOGE-USD
+2026-03-20 11:39:11,991 | INFO     | [dim]DOGE-USD on cooldown, skipping.[/dim]
+2026-03-20 11:39:11,992 | INFO     | Cycle #2 complete. Trades this cycle: 0 | Today: 1/100
+2026-03-20 11:39:11,993 | INFO     | Portfolio: cash=$103.48 | invested=$26.56 (25.2%) | total=$130.04 | P&L=$-1.66
+2026-03-20 11:39:11,993 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-20 11:44:12,011 | INFO     | === Cycle #3 at 07:44:12 ET ===
+2026-03-20 11:44:12,031 | INFO     | Refreshing portfolio prices...
+2026-03-20 11:44:12,542 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-20 11:44:14,103 | INFO     | AI suggested: DOGE-USD
+2026-03-20 11:44:14,105 | INFO     | [dim]DOGE-USD on cooldown, skipping.[/dim]
+2026-03-20 11:44:14,107 | INFO     | Cycle #3 complete. Trades this cycle: 0 | Today: 1/100
+2026-03-20 11:44:14,108 | INFO     | Portfolio: cash=$103.48 | invested=$26.56 (25.2%) | total=$130.04 | P&L=$-1.66
+2026-03-20 11:44:14,109 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-20 11:49:14,132 | INFO     | === Cycle #4 at 07:49:14 ET ===
+2026-03-20 11:49:14,150 | INFO     | Refreshing portfolio prices...
+2026-03-20 11:49:14,744 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-20 11:49:16,064 | INFO     | AI suggested: DOGE-USD
+2026-03-20 11:49:16,067 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-20 11:49:18,890 | INFO     | DOGE-USD → BUY (confidence: 70%, risk: 70%)
+2026-03-20 11:49:19,127 | WARNING  | [red]REJECTED[/red] DOGE-USD buy: Dogecoin is currently trading near its 52-week low with a recent price dip, presenting a potential buying opportunity for a high-risk profile. The volume is slightly below average, but the overall market sentiment for crypto is positive. Given the high volatility, this aligns with the client's risk appetite. | REJECTED: Investment cap reached — no more cash can be deployed.
+2026-03-20 11:49:19,134 | INFO     | Cycle #4 complete. Trades this cycle: 0 | Today: 1/100
+2026-03-20 11:49:19,135 | INFO     | Portfolio: cash=$103.48 | invested=$26.56 (25.2%) | total=$130.04 | P&L=$-1.66
+2026-03-20 11:49:19,135 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-20 11:54:19,152 | INFO     | === Cycle #5 at 07:54:19 ET ===
+2026-03-20 11:54:19,169 | INFO     | Refreshing portfolio prices...
+2026-03-20 11:54:19,726 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-20 11:54:21,983 | INFO     | AI suggested: DOGE-USD
+2026-03-20 11:54:21,985 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-20 11:54:25,554 | INFO     | DOGE-USD → BUY (confidence: 70%, risk: 70%)
+2026-03-20 11:54:25,804 | WARNING  | [red]REJECTED[/red] DOGE-USD buy: Dogecoin is currently trading near its 52-week low with a recent price decline, presenting a potential buying opportunity for a high-risk profile. The high volatility and recent volume suggest momentum could shift, aligning with the client's growth-chasing strategy. | REJECTED: Investment cap reached — no more cash can be deployed.
+2026-03-20 11:54:25,813 | INFO     | Cycle #5 complete. Trades this cycle: 0 | Today: 1/100
+2026-03-20 11:54:25,814 | INFO     | Portfolio: cash=$103.48 | invested=$26.56 (25.2%) | total=$130.04 | P&L=$-1.66
+2026-03-20 11:54:25,815 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-20 11:59:25,834 | INFO     | === Cycle #6 at 07:59:25 ET ===
+2026-03-20 11:59:25,846 | INFO     | Refreshing portfolio prices...
+2026-03-20 11:59:26,313 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-20 11:59:27,967 | INFO     | AI suggested: DOGE-USD
+2026-03-20 11:59:27,968 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-20 11:59:32,437 | INFO     | DOGE-USD → BUY (confidence: 70%, risk: 70%)
+2026-03-20 11:59:32,671 | WARNING  | [red]REJECTED[/red] DOGE-USD buy: Dogecoin has recently experienced a price decline, presenting a potential buying opportunity for a high-risk profile. The current price is near the 52-week low, and the high trading volume suggests continued interest. Given the client's high-risk tolerance, a small additional position could capitalize on potential upward momentum. | REJECTED: Investment cap reached — no more cash can be deployed.
+2026-03-20 11:59:32,673 | INFO     | Cycle #6 complete. Trades this cycle: 0 | Today: 1/100
+2026-03-20 11:59:32,674 | INFO     | Portfolio: cash=$103.48 | invested=$26.56 (25.2%) | total=$130.04 | P&L=$-1.66
+2026-03-20 11:59:32,674 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-20 12:04:32,687 | INFO     | === Cycle #7 at 08:04:32 ET ===
+2026-03-20 12:04:32,703 | INFO     | Refreshing portfolio prices...
+2026-03-20 12:04:33,277 | INFO     | No watchlist set — asking AI for suggestions...
+2026-03-20 12:04:35,434 | INFO     | AI suggested: DOGE-USD
+2026-03-20 12:04:35,435 | INFO     | Analysing [cyan]DOGE-USD[/cyan]...
+2026-03-20 12:04:41,710 | INFO     | DOGE-USD → BUY (confidence: 70%, risk: 70%)
+2026-03-20 12:04:42,009 | WARNING  | [red]REJECTED[/red] DOGE-USD buy: Dogecoin is currently trading near its 52-week low, presenting a potential buying opportunity given its high volatility and recent price drop. The current market sentiment and volume suggest a possible rebound, aligning with the client's high-risk profile. | REJECTED: Investment cap reached — no more cash can be deployed.
+2026-03-20 12:04:42,010 | INFO     | Cycle #7 complete. Trades this cycle: 0 | Today: 1/100
+2026-03-20 12:04:42,011 | INFO     | Portfolio: cash=$103.48 | invested=$26.56 (25.2%) | total=$130.04 | P&L=$-1.66
+2026-03-20 12:04:42,011 | INFO     | Sleeping 5 minutes until next cycle...
+2026-03-20 12:09:18,089 | INFO     | Shutdown signal received. Finishing current cycle...
+2026-03-20 12:09:18,209 | INFO     | Daemon stopped.

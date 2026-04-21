@@ -1,0 +1,7 @@
+openai>=1.12.0
+yfinance>=0.2.36
+rich>=13.7.0
+pydantic>=2.6.0
+click>=8.1.7
+python-dotenv>=1.0.1
+alpaca-py>=0.28.0

@@ -1,0 +1,71 @@
+{
+  "cash": 103.48,
+  "initial_cash": 105.56,
+  "buying_power": 103.48,
+  "positions": {
+    "DOGEUSD": {
+      "ticker": "DOGEUSD",
+      "shares": 281.295,
+      "avg_cost": 0.100311489,
+      "current_price": 0.09442,
+      "last_updated": "2026-03-20T12:04:33.275741"
+    }
+  },
+  "trade_history": [
+    {
+      "id": "5bbfb27b",
+      "ticker": "DOGE-USD",
+      "action": "buy",
+      "shares": 22.0,
+      "price": 0.09442,
+      "total": 2.07724,
+      "status": "executed",
+      "reasoning": "Dogecoin is currently trading near its 52-week low with a recent downward trend, presenting a potential buying opportunity for a high-risk profile. The current market sentiment and high volatility align with the client's risk appetite for momentum plays.",
+      "timestamp": "2026-03-20T11:34:09.558047"
+    },
+    {
+      "id": "4433940b",
+      "ticker": "DOGE-USD",
+      "action": "buy",
+      "shares": 393.0,
+      "price": 0.09394725,
+      "total": 36.92126925,
+      "status": "rejected",
+      "reasoning": "Dogecoin is currently trading near its 52-week low with a recent price dip, presenting a potential buying opportunity for a high-risk profile. The volume is slightly below average, but the overall market sentiment for crypto is positive. Given the high volatility, this aligns with the client's risk appetite. | REJECTED: Investment cap reached — no more cash can be deployed.",
+      "timestamp": "2026-03-20T11:49:19.035115"
+    },
+    {
+      "id": "c4cf1b37",
+      "ticker": "DOGE-USD",
+      "action": "buy",
+      "shares": 393.0,
+      "price": 0.093893826,
+      "total": 36.900273618,
+      "status": "rejected",
+      "reasoning": "Dogecoin is currently trading near its 52-week low with a recent price decline, presenting a potential buying opportunity for a high-risk profile. The high volatility and recent volume suggest momentum could shift, aligning with the client's growth-chasing strategy. | REJECTED: Investment cap reached — no more cash can be deployed.",
+      "timestamp": "2026-03-20T11:54:25.713565"
+    },
+    {
+      "id": "133077cc",
+      "ticker": "DOGE-USD",
+      "action": "buy",
+      "shares": 393.0,
+      "price": 0.093905926,
+      "total": 36.905028918,
+      "status": "rejected",
+      "reasoning": "Dogecoin has recently experienced a price decline, presenting a potential buying opportunity for a high-risk profile. The current price is near the 52-week low, and the high trading volume suggests continued interest. Given the client's high-risk tolerance, a small additional position could capitalize on potential upward momentum. | REJECTED: Investment cap reached — no more cash can be deployed.",
+      "timestamp": "2026-03-20T11:59:32.583006"
+    },
+    {
+      "id": "5d1d4dfc",
+      "ticker": "DOGE-USD",
+      "action": "buy",
+      "shares": 392.0,
+      "price": 0.094089195,
+      "total": 36.88296444,
+      "status": "rejected",
+      "reasoning": "Dogecoin is currently trading near its 52-week low, presenting a potential buying opportunity given its high volatility and recent price drop. The current market sentiment and volume suggest a possible rebound, aligning with the client's high-risk profile. | REJECTED: Investment cap reached — no more cash can be deployed.",
+      "timestamp": "2026-03-20T12:04:41.907599"
+    }
+  ]
+}
