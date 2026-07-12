@@ -123,10 +123,11 @@ class AlpacaBroker:
     # Orders
     # ------------------------------------------------------------------
 
-    def buy(self, ticker: str, shares: int) -> dict:
+    def buy(self, ticker: str, shares: float) -> dict:
         """Submit a market buy order. Returns order details."""
         is_crypto = self._is_crypto(ticker)
         alpaca_symbol = self._to_alpaca_symbol(ticker)
+        shares = self._round_qty(shares, is_crypto)
         
         # Use GTC for crypto (24/7) and paper mode (fills may be delayed)
         if is_crypto or not self.is_live:
@@ -138,7 +139,7 @@ class AlpacaBroker:
         try:
             account = self.get_account()
             log.info(
-                "Attempting BUY: %s x%d shares | Available buying power: $%.2f",
+                "Attempting BUY: %s x%.6g shares | Available buying power: $%.2f",
                 ticker, shares, account["buying_power"]
             )
         except Exception:
@@ -153,7 +154,7 @@ class AlpacaBroker:
         try:
             order = self.client.submit_order(order_data)
             asset_type = "CRYPTO" if is_crypto else "STOCK"
-            log.info("%s BUY order submitted: %s x%d — order_id=%s", asset_type, ticker, shares, order.id)
+            log.info("%s BUY order submitted: %s x%.6g — order_id=%s", asset_type, ticker, shares, order.id)
             filled = self._wait_for_fill(str(order.id), is_crypto=is_crypto)
             return filled
         except APIError as e:
@@ -165,10 +166,11 @@ class AlpacaBroker:
                 "error": str(e),
             }
 
-    def sell(self, ticker: str, shares: int) -> dict:
+    def sell(self, ticker: str, shares: float) -> dict:
         """Submit a market sell order. Returns order details."""
         is_crypto = self._is_crypto(ticker)
         alpaca_symbol = self._to_alpaca_symbol(ticker)
+        shares = self._round_qty(shares, is_crypto)
         # Use GTC for crypto (24/7) and paper mode (fills may be delayed)
         if is_crypto or not self.is_live:
             tif = TimeInForce.GTC
@@ -184,7 +186,7 @@ class AlpacaBroker:
         try:
             order = self.client.submit_order(order_data)
             asset_type = "CRYPTO" if is_crypto else "STOCK"
-            log.info("%s SELL order submitted: %s x%d — order_id=%s", asset_type, ticker, shares, order.id)
+            log.info("%s SELL order submitted: %s x%.6g — order_id=%s", asset_type, ticker, shares, order.id)
             filled = self._wait_for_fill(str(order.id), is_crypto=is_crypto)
             return filled
         except APIError as e:
@@ -275,6 +277,17 @@ class AlpacaBroker:
             "shares": 0,
             "error": f"Order did not fill within {timeout}s (status: {last_status})",
         }
+
+    @staticmethod
+    def _round_qty(shares: float, is_crypto: bool) -> float:
+        """Round share quantity to Alpaca's supported precision.
+
+        Crypto supports up to 8 decimal places; stocks support up to 9 but
+        Alpaca rejects overly precise values, so we cap stocks at 6 dp.
+        """
+        if is_crypto:
+            return round(shares, 8)
+        return round(shares, 6)
 
     def get_order_status(self, order_id: str) -> dict:
         """Get the status of an order."""

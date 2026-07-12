@@ -74,7 +74,7 @@ class PortfolioManager:
                     pass
             
             allowed, reason, adj_shares = risk.check_buy(
-                trade.ticker, int(trade.shares), trade.price, 
+                trade.ticker, trade.shares, trade.price,
                 buying_power=buying_power, is_live=is_live
             )
             if not allowed:
@@ -88,7 +88,7 @@ class PortfolioManager:
             trade.total = adj_shares * trade.price
 
             # Always route through Alpaca (paper or live based on ALPACA_MODE)
-            result = self._broker.buy(trade.ticker, int(adj_shares))
+            result = self._broker.buy(trade.ticker, adj_shares)
             if result["status"] == "filled":
                 # Paper mode may return avg_price=0 for pending orders
                 if result["avg_price"] and result["avg_price"] > 0:
@@ -102,7 +102,7 @@ class PortfolioManager:
                 trade.reasoning += f" | BROKER: {result.get('error', result['status'])}"
 
         elif trade.action == TradeAction.SELL:
-            allowed, reason, adj_shares = risk.check_sell(trade.ticker, int(trade.shares))
+            allowed, reason, adj_shares = risk.check_sell(trade.ticker, trade.shares)
             if not allowed:
                 trade.status = TradeStatus.REJECTED
                 trade.reasoning += f" | REJECTED: {reason}"
@@ -114,7 +114,7 @@ class PortfolioManager:
             trade.total = adj_shares * trade.price
 
             # Always route through Alpaca (paper or live based on ALPACA_MODE)
-            result = self._broker.sell(trade.ticker, int(adj_shares))
+            result = self._broker.sell(trade.ticker, adj_shares)
             if result["status"] == "filled":
                 trade.price = result["avg_price"]
                 trade.shares = result["shares"]

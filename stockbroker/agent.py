@@ -60,8 +60,10 @@ IMPORTANT:
 - confidence should reflect how sure you are about the recommendation.
   If the data clearly supports the trade, use 0.6-0.9.
 - target_shares should be a sensible number based on available cash and position limits.
-  If the asset is too expensive for the position limit, set target_shares to 0.
-  For expensive assets like BTC, suggest fractional amounts (e.g. 1 share = small position).
+  Fractional shares are supported for ALL assets — use decimals to make full use of the position limit.
+  For example, if max position is $500 and the stock costs $320, suggest 1.5 shares not 1.
+  For crypto (BTC, ETH etc.) use small decimals freely (e.g. 0.003 BTC).
+  Only set target_shares to 0 if there is genuinely no case to buy.
 - suggested_stop_loss is the % drop at which this position should be sold (e.g. 8.0 for 8%).
 - suggested_take_profit is the % gain at which profits should be taken (e.g. 15.0 for 15%).
   Base these on the asset's volatility and your analysis.
@@ -80,7 +82,7 @@ Respond with this exact JSON structure:
   "ticker": "<TICKER>",
   "recommendation": "buy" | "sell" | "hold",
   "confidence": <0.0-1.0>,
-  "target_shares": <integer>,
+  "target_shares": <number, decimals allowed e.g. 1.5 or 0.003>,
   "reasoning": "<2-3 sentence explanation>",
   "risk_score": <0.0-1.0>,
   "suggested_stop_loss": <percent as float, e.g. 8.0>,
@@ -275,7 +277,7 @@ class AgentBrain:
 
             quote = get_quote(ticker)
             
-            # Skip if AI suggests 0 shares (asset too expensive)
+            # Skip if AI suggests 0 shares
             if analysis.target_shares <= 0:
                 trades.append(
                     Trade(
@@ -283,7 +285,7 @@ class AgentBrain:
                         action=TradeAction.HOLD,
                         shares=0,
                         price=quote.price,
-                        reasoning=f"Asset too expensive for position limit (${quote.price:.2f} > max position ${self.config.effective_max_single_position_pct * portfolio.cash:.2f})",
+                        reasoning=f"AI suggested 0 shares — skipping (price: ${quote.price:.2f}).",
                     )
                 )
                 continue
@@ -339,7 +341,7 @@ class AgentBrain:
                 ticker=data.get("ticker", fallback_ticker).upper(),
                 recommendation=TradeAction(data["recommendation"].lower()),
                 confidence=float(data.get("confidence", 0.5)),
-                target_shares=int(data.get("target_shares", 0)),
+                target_shares=float(data.get("target_shares", 0)),
                 reasoning=data.get("reasoning", ""),
                 risk_score=float(data.get("risk_score", 0.5)),
                 suggested_stop_loss=float(data.get("suggested_stop_loss", 0.0)),

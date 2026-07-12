@@ -190,7 +190,7 @@ class StockAnalysis(BaseModel):
     ticker: str
     recommendation: TradeAction
     confidence: float = Field(ge=0.0, le=1.0)
-    target_shares: int = 0
+    target_shares: float = 0.0
     reasoning: str = ""
     risk_score: float = Field(default=0.5, ge=0.0, le=1.0)
     suggested_stop_loss: float = Field(default=0.0, ge=0.0, description="AI-suggested stop-loss % for this position")
@@ -239,4 +239,13 @@ class DaemonConfig(BaseModel):
         default=15,
         ge=0,
         description="Wait this long after a trade before trading the same ticker again.",
+    )
+    youtube_channels: list[str] = Field(
+        default_factory=list,
+        description="YouTube channel handles to follow for trading strategy (no @ prefix).",
+    )
+    youtube_refresh_hours: float = Field(
+        default=6.0,
+        ge=0.5,
+        description="Re-fetch YouTube strategies every this many hours during a daemon session.",
     )

@@ -19,7 +19,7 @@ class RiskEngine:
     # Public API
     # ------------------------------------------------------------------
 
-    def check_buy(self, ticker: str, shares: int, price: float, buying_power: float = None, is_live: bool = False) -> tuple[bool, str, int]:
+    def check_buy(self, ticker: str, shares: float, price: float, buying_power: float = None, is_live: bool = False) -> tuple[bool, str, float]:
         """Check if a BUY order is allowed.
 
         Returns (allowed, reason, adjusted_shares).
@@ -69,24 +69,24 @@ class RiskEngine:
             return False, "Position size limit or insufficient cash.", 0
 
         if cost > allowed_spend:
-            adjusted_shares = int(allowed_spend // price)
+            adjusted_shares = round(allowed_spend / price, 6)
             if adjusted_shares <= 0:
-                return False, "Adjusted position too small after constraints.", 0
+                return False, "Adjusted position too small after constraints.", 0.0
             return (
                 True,
-                f"Reduced from {shares} to {adjusted_shares} shares to respect limits.",
+                f"Reduced from {shares:.6g} to {adjusted_shares:.6g} shares to respect limits.",
                 adjusted_shares,
             )
 
         return True, "Trade approved.", shares
 
-    def check_sell(self, ticker: str, shares: int) -> tuple[bool, str, int]:
+    def check_sell(self, ticker: str, shares: float) -> tuple[bool, str, float]:
         """Check if a SELL order is allowed."""
         if ticker not in self.portfolio.positions:
-            return False, f"No position in {ticker}.", 0
+            return False, f"No position in {ticker}.", 0.0
         held = self.portfolio.positions[ticker].shares
         if shares > held:
-            return True, f"Reduced to {int(held)} (all held shares).", int(held)
+            return True, f"Reduced to {held:.6g} (all held shares).", held
         return True, "Trade approved.", shares
 
     def evaluate_analysis(self, analysis: StockAnalysis) -> tuple[bool, str]:
