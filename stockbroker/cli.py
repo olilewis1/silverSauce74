@@ -2,12 +2,17 @@
 
 from __future__ import annotations
 
+import os
+
 import click
 from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
 from rich.prompt import Prompt, FloatPrompt, Confirm
 from rich import box
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from .agent import AgentBrain
 from .daemon import TradingDaemon
@@ -236,14 +241,40 @@ def main():
             )
 
         elif action == "suggest":
-            with console.status("Getting AI suggestions..."):
-                suggestions = brain.suggest_stocks()
-            table = Table(title="AI Suggestions", box=box.ROUNDED)
-            table.add_column("Ticker", style="cyan bold")
-            table.add_column("Reason")
-            for s in suggestions:
-                table.add_row(s.get("ticker", "?"), s.get("reason", ""))
-            console.print(table)
+            source = Prompt.ask(
+                "Suggestion source",
+                choices=["ai", "youtube"],
+                default="ai",
+            )
+            if source == "youtube":
+                yt_tickers, yt_summaries, _ = _fetch_youtube_strategies(config)
+                if yt_summaries:
+                    table = Table(title="YouTube Trader Strategies", box=box.ROUNDED)
+                    table.add_column("Channel", style="cyan")
+                    table.add_column("Strategy", max_width=50)
+                    table.add_column("Bullish", style="green")
+                    table.add_column("Bearish", style="red")
+                    table.add_column("Confidence", style="yellow")
+                    for s in yt_summaries:
+                        table.add_row(
+                            f"@{s.get('channel', '?')}",
+                            s.get("strategy_summary", "")[:100],
+                            ", ".join(s.get("bullish_tickers", [])) or "—",
+                            ", ".join(s.get("bearish_tickers", [])) or "—",
+                            f"{s.get('confidence', 0):.0%}",
+                        )
+                    console.print(table)
+                else:
+                    console.print("[yellow]No YouTube strategies found.[/yellow]")
+            else:
+                with console.status("Getting AI suggestions..."):
+                    suggestions = brain.suggest_stocks()
+                table = Table(title="AI Suggestions", box=box.ROUNDED)
+                table.add_column("Ticker", style="cyan bold")
+                table.add_column("Reason")
+                for s in suggestions:
+                    table.add_row(s.get("ticker", "?"), s.get("reason", ""))
+                console.print(table)
 
         elif action == "auto":
             tickers_input = Prompt.ask(
@@ -348,6 +379,87 @@ def main():
             console.print(f"[green]Deposited ${amount:,.2f}. New cash: ${pm.portfolio.cash:,.2f}[/green]")
 
 
+def _get_default_youtube_handles() -> list[str]:
+    """Read YOUTUBE_CHANNELS from .env, return as a list of handles (no @ prefix)."""
+    raw = os.getenv("YOUTUBE_CHANNELS", "")
+    return [h.strip().lstrip("@") for h in raw.split(",") if h.strip()]
+
+
+def _fetch_youtube_strategies(config: AgentConfig) -> tuple[list[str], list[dict], list[str]]:
+    """Prompt for (or use default) YouTube handles and fetch strategies.
+
+    Returns (bullish_tickers, summaries, handles_used).
+    """
+    from .youtube_strategy import YouTubeStrategyFetcher
+
+    defaults = _get_default_youtube_handles()
+    default_display = ", ".join(f"@{h}" for h in defaults) if defaults else "none saved"
+    console.print(
+        Panel(
+            "[bold yellow]YouTube Trader Strategy Mode[/bold yellow]\n\n"
+            "The AI will fetch recent video transcripts and extract their top picks.\n\n"
+            f"[dim]Default channels (from YOUTUBE_CHANNELS in .env): {default_display}[/dim]\n"
+            "[dim]Leave blank to use defaults, or enter new handles.[/dim]",
+            border_style="yellow",
+        )
+    )
+
+    handles_input = Prompt.ask(
+        "YouTube handles (comma-separated, or Enter to use defaults)",
+        default="",
+    )
+    if handles_input.strip():
+        handles = [h.strip().lstrip("@") for h in handles_input.split(",") if h.strip()]
+    else:
+        handles = defaults
+
+    if not handles:
+        console.print("[red]No handles configured. Set YOUTUBE_CHANNELS in .env or enter handles above.[/red]")
+        return [], [], []
+
+    fetcher = YouTubeStrategyFetcher()
+    with console.status(f"[yellow]Fetching strategies from {len(handles)} channel(s)...[/yellow]"):
+        try:
+            tickers, summaries = fetcher.get_tickers_from_channels(handles)
+        except RuntimeError as e:
+            console.print(f"[red]Error: {e}[/red]")
+            return [], [], []
+
+    if not tickers:
+        console.print("[yellow]No tickers extracted from YouTube strategies.[/yellow]")
+
+    return tickers, summaries, handles
+
+
+def _setup_youtube_watchlist(config: AgentConfig) -> tuple[list[str], list[str]]:
+    """Prompt for YouTube channel handles and return (watchlist_tickers, channel_handles)."""
+    tickers, summaries, used_handles = _fetch_youtube_strategies(config)
+
+    if summaries:
+        table = Table(title="YouTube Trader Strategies", box=box.ROUNDED)
+        table.add_column("Channel", style="cyan")
+        table.add_column("Strategy", style="white", max_width=50)
+        table.add_column("Bullish", style="green")
+        table.add_column("Bearish", style="red")
+        table.add_column("Confidence", style="yellow")
+        for s in summaries:
+            table.add_row(
+                f"@{s.get('channel', '?')}",
+                s.get("strategy_summary", "")[:100],
+                ", ".join(s.get("bullish_tickers", [])) or "—",
+                ", ".join(s.get("bearish_tickers", [])) or "—",
+                f"{s.get('confidence', 0):.0%}",
+            )
+        console.print(table)
+
+    if not tickers:
+        console.print("[yellow]No tickers extracted. Falling back to AI picks.[/yellow]")
+        return [], []
+
+    console.print(f"\n[green]Watchlist from YouTube strategies:[/green] {', '.join(tickers)}")
+    return tickers, used_handles
+
+
 def _start_daemon(config: AgentConfig, pm: PortfolioManager) -> None:
     """Configure and launch the autonomous trading daemon."""
     console.print(
@@ -367,11 +479,14 @@ def _start_daemon(config: AgentConfig, pm: PortfolioManager) -> None:
     max_cycle = int(FloatPrompt.ask("Max trades per cycle", default=5.0))
 
     watchlist_input = Prompt.ask(
-        "Watchlist tickers (comma-separated, or 'ai' for AI picks)",
+        "Watchlist tickers (comma-separated, 'ai' for AI picks, or 'youtube' to copy a trader's strategy)",
         default="ai",
     )
     watchlist: list[str] = []
-    if watchlist_input != "ai":
+    youtube_channels: list[str] = []
+    if watchlist_input == "youtube":
+        watchlist, youtube_channels = _setup_youtube_watchlist(config)
+    elif watchlist_input != "ai":
         watchlist = [
             t.strip().upper()
             for t in watchlist_input.split(",")
@@ -392,6 +507,13 @@ def _start_daemon(config: AgentConfig, pm: PortfolioManager) -> None:
 
     cooldown = int(FloatPrompt.ask("Cooldown after trade (minutes)", default=15.0))
 
+    youtube_refresh = 6.0
+    if youtube_channels:
+        youtube_refresh = float(Prompt.ask(
+            "Re-fetch YouTube strategies every N hours",
+            default="6",
+        ))
+
     daemon_config = DaemonConfig(
         check_interval_minutes=interval,
         max_trades_per_day=max_day,
@@ -401,6 +523,8 @@ def _start_daemon(config: AgentConfig, pm: PortfolioManager) -> None:
         sell_stop_loss_pct=stop_loss,
         sell_take_profit_pct=take_profit,
         cooldown_after_trade_minutes=cooldown,
+        youtube_channels=youtube_channels,
+        youtube_refresh_hours=youtube_refresh,
     )
 
     if not Confirm.ask("\n[bold]Start autonomous trading now?[/bold]"):

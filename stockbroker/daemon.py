@@ -87,6 +87,8 @@ class TradingDaemon:
         self._cooldowns: dict[str, datetime] = {}  # ticker -> earliest next trade time
         self._cycle_count = 0
         self._exit_levels: dict[str, dict] = {}  # ticker -> {stop_loss, take_profit}
+        self._youtube_bearish: set[str] = set()  # tickers flagged bearish by YouTubers
+        self._last_youtube_refresh: Optional[datetime] = None
 
         # Graceful shutdown
         signal.signal(signal.SIGINT, self._handle_shutdown)
@@ -139,6 +141,9 @@ class TradingDaemon:
             self._trades_today = []
 
         self.log.info("=== Cycle #%d at %s ET ===", self._cycle_count, now.strftime("%H:%M:%S"))
+
+        # YouTube strategy refresh (if channels are configured)
+        self._maybe_refresh_youtube()
 
         # Market hours check
         if self._should_enforce_market_hours() and not self._is_market_open(now):
@@ -367,10 +372,61 @@ class TradingDaemon:
         
         return True
 
+    def _maybe_refresh_youtube(self) -> None:
+        """Re-fetch YouTube strategies periodically and update the watchlist."""
+        channels = self.daemon_config.youtube_channels
+        if not channels:
+            return
+
+        refresh_delta = timedelta(hours=self.daemon_config.youtube_refresh_hours)
+        if self._last_youtube_refresh and datetime.utcnow() - self._last_youtube_refresh < refresh_delta:
+            return
+
+        self.log.info(
+            "[yellow]Refreshing YouTube strategies from %d channel(s)...[/yellow]",
+            len(channels),
+        )
+        try:
+            from .youtube_strategy import YouTubeStrategyFetcher
+            fetcher = YouTubeStrategyFetcher()
+            tickers, summaries = fetcher.get_tickers_from_channels(channels)
+
+            # Update bearish blacklist
+            new_bearish: set[str] = set()
+            for s in summaries:
+                new_bearish.update(t.upper() for t in s.get("bearish_tickers", []))
+            if new_bearish != self._youtube_bearish:
+                self.log.info(
+                    "[red]YouTube bearish blacklist updated:[/red] %s",
+                    ", ".join(sorted(new_bearish)) or "(none)",
+                )
+            self._youtube_bearish = new_bearish
+
+            # Update watchlist (filtered)
+            new_watchlist = [
+                t.upper() for t in tickers
+                if self._ticker_allowed(t) and t.upper() not in self._youtube_bearish
+            ]
+            if new_watchlist:
+                self.daemon_config.watchlist = new_watchlist
+                self.log.info(
+                    "[green]YouTube watchlist updated:[/green] %s",
+                    ", ".join(new_watchlist),
+                )
+            else:
+                self.log.warning("YouTube refresh returned no valid tickers.")
+
+            self._last_youtube_refresh = datetime.utcnow()
+        except Exception as e:
+            self.log.error("YouTube strategy refresh failed: %s", e)
+
     def _get_tickers(self) -> list[str]:
         """Get the list of tickers to analyse this cycle."""
         if self.daemon_config.watchlist:
-            return [t.upper() for t in self.daemon_config.watchlist if self._ticker_allowed(t)]
+            return [
+                t.upper() for t in self.daemon_config.watchlist
+                if self._ticker_allowed(t) and t.upper() not in self._youtube_bearish
+            ]
 
         # Let the AI suggest
         self.log.info("No watchlist set — asking AI for suggestions...")

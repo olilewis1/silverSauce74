@@ -5,3 +5,5 @@ pydantic>=2.6.0
 click>=8.1.7
 python-dotenv>=1.0.1
 alpaca-py>=0.28.0
+youtube-transcript-api>=0.6.2
+google-api-python-client>=2.100.0
