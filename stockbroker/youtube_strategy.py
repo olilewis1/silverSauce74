@@ -56,6 +56,7 @@ class YouTubeStrategyFetcher:
     def __init__(self):
         self._openai = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
         self._yt_api_key = os.getenv("YOUTUBE_API_KEY")
+        self._cookies_file = os.getenv("YOUTUBE_COOKIES_FILE")  # optional: path to cookies.txt
 
     # ------------------------------------------------------------------
     # Public API
@@ -179,30 +180,57 @@ class YouTubeStrategyFetcher:
         ]
 
     def _get_transcript(self, video_id: str) -> Optional[str]:
-        """Fetch English transcript for a video using youtube-transcript-api."""
+        """Fetch English transcript for a video using youtube-transcript-api.
+
+        Supports both v0.x (static class) and v1.x (instance) APIs.
+        """
         try:
-            from youtube_transcript_api import YouTubeTranscriptApi, NoTranscriptFound, TranscriptsDisabled
+            from youtube_transcript_api import YouTubeTranscriptApi
         except ImportError:
             raise RuntimeError(
                 "Missing dependency: run `pip install youtube-transcript-api`"
             )
 
+        def _chunks_to_text(chunks) -> str:
+            parts = []
+            for chunk in chunks:
+                text = chunk.text if hasattr(chunk, "text") else chunk.get("text", "")
+                parts.append(text)
+            return " ".join(parts)
+
+        kwargs = {}
+        if self._cookies_file and os.path.exists(self._cookies_file):
+            kwargs["cookies"] = self._cookies_file
+
+        # --- Strategy 1: v1.x direct fetch (simplest) ---
         try:
-            transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
-            # Try English first, then auto-generated, then any
+            api = YouTubeTranscriptApi(**kwargs)
+            if hasattr(api, "fetch"):
+                chunks = api.fetch(video_id)
+                return _chunks_to_text(chunks)
+        except Exception as e:
+            log.debug("v1 fetch failed for %s: %s", video_id, e)
+
+        # --- Strategy 2: list + find (v0.x static or v1.x instance) ---
+        try:
+            api = YouTubeTranscriptApi(**kwargs)
+            list_fn = getattr(api, "list", None) or getattr(YouTubeTranscriptApi, "list_transcripts", None)
+            if list_fn is None:
+                raise AttributeError("No list method found on YouTubeTranscriptApi")
+            transcript_list = list_fn(video_id)
             try:
                 transcript = transcript_list.find_transcript(["en"])
-            except NoTranscriptFound:
-                transcript = transcript_list.find_generated_transcript(["en"])
-
+            except Exception:
+                try:
+                    transcript = transcript_list.find_generated_transcript(["en"])
+                except Exception:
+                    transcript = next(iter(transcript_list), None)
+            if transcript is None:
+                return None
             chunks = transcript.fetch()
-            return " ".join(chunk["text"] for chunk in chunks)
-
-        except (NoTranscriptFound, TranscriptsDisabled):
-            log.debug("No transcript for video %s", video_id)
-            return None
+            return _chunks_to_text(chunks)
         except Exception as e:
-            log.debug("Transcript error for %s: %s", video_id, e)
+            log.warning("Transcript unavailable for video %s: %s", video_id, e)
             return None
 
     def _extract_strategy(self, channel: str, transcripts: list[str]) -> dict:

@@ -213,6 +213,8 @@ class AlpacaBroker:
             timeout = 90 if is_crypto else 60
         elif is_crypto:
             timeout = 120  # Live crypto needs even more time
+        else:
+            timeout = 120  # Live stocks: allow extra time for slow fills / after-hours queuing
         
         start = time.time()
         last_status = None
@@ -258,10 +260,11 @@ class AlpacaBroker:
                     "error": str(e),
                 }
         
-        # Timeout reached — for paper mode, treat accepted orders as pending (they fill later)
+        # Timeout reached — treat accepted/new orders as queued rather than rejected
         log.warning("Order %s timed out with status: %s", order_id[:8], last_status)
-        if not self.is_live and str(last_status) in ("OrderStatus.ACCEPTED", "OrderStatus.NEW", "accepted", "new"):
-            log.info("Paper mode: treating timed-out order as filled (will settle later)")
+        if str(last_status) in ("OrderStatus.ACCEPTED", "OrderStatus.NEW", "accepted", "new"):
+            mode = "Paper" if not self.is_live else "Live"
+            log.info("%s mode: order accepted but not yet filled — treating as filled (will settle later)", mode)
             return {
                 "status": "filled",
                 "ticker": order.symbol,

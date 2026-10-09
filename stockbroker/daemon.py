@@ -89,6 +89,9 @@ class TradingDaemon:
         self._exit_levels: dict[str, dict] = {}  # ticker -> {stop_loss, take_profit}
         self._youtube_bearish: set[str] = set()  # tickers flagged bearish by YouTubers
         self._last_youtube_refresh: Optional[datetime] = None
+        self._trump_watchlist_extra: list[str] = []  # tickers added by Trump signal
+        self._trump_bearish: set[str] = set()        # tickers flagged bearish by Trump signal
+        self._last_trump_refresh: Optional[datetime] = None
 
         # Graceful shutdown
         signal.signal(signal.SIGINT, self._handle_shutdown)
@@ -144,6 +147,9 @@ class TradingDaemon:
 
         # YouTube strategy refresh (if channels are configured)
         self._maybe_refresh_youtube()
+
+        # Trump tracking refresh (if enabled)
+        self._maybe_refresh_trump()
 
         # Market hours check
         if self._should_enforce_market_hours() and not self._is_market_open(now):
@@ -241,23 +247,27 @@ class TradingDaemon:
             stop_loss = levels.get("stop_loss", self.daemon_config.sell_stop_loss_pct)
             take_profit = levels.get("take_profit", self.daemon_config.sell_take_profit_pct)
 
+            shares_to_sell = pos.shares
+            if shares_to_sell <= 0:
+                continue
+
             # Stop-loss
             if pnl_pct <= -stop_loss:
                 self.log.warning(
-                    "[red]STOP-LOSS[/red] %s at %.2f%% loss (limit: %.1f%%). Selling %d shares.",
-                    ticker, pnl_pct * 100, stop_loss * 100, int(pos.shares),
+                    "[red]STOP-LOSS[/red] %s at %.2f%% loss (limit: %.1f%%). Selling %.6g shares.",
+                    ticker, pnl_pct * 100, stop_loss * 100, shares_to_sell,
                 )
-                self._execute_sell(ticker, int(pos.shares), f"Stop-loss triggered at {pnl_pct:.1%} (limit: {stop_loss:.0%})")
+                self._execute_sell(ticker, shares_to_sell, f"Stop-loss triggered at {pnl_pct:.1%} (limit: {stop_loss:.0%})")
 
             # Take-profit
             elif pnl_pct >= take_profit:
                 self.log.info(
-                    "[green]TAKE-PROFIT[/green] %s at +%.2f%% (limit: %.1f%%). Selling %d shares.",
-                    ticker, pnl_pct * 100, take_profit * 100, int(pos.shares),
+                    "[green]TAKE-PROFIT[/green] %s at +%.2f%% (limit: %.1f%%). Selling %.6g shares.",
+                    ticker, pnl_pct * 100, take_profit * 100, shares_to_sell,
                 )
-                self._execute_sell(ticker, int(pos.shares), f"Take-profit triggered at {pnl_pct:+.1%} (limit: {take_profit:.0%})")
+                self._execute_sell(ticker, shares_to_sell, f"Take-profit triggered at {pnl_pct:+.1%} (limit: {take_profit:.0%})")
 
-    def _execute_sell(self, ticker: str, shares: int, reason: str) -> Optional[Trade]:
+    def _execute_sell(self, ticker: str, shares: float, reason: str) -> Optional[Trade]:
         """Execute a sell trade for exit signals."""
         try:
             # Normalize ticker for market data (DOGEUSD -> DOGE-USD)
@@ -274,7 +284,7 @@ class TradingDaemon:
             if result.status == TradeStatus.EXECUTED:
                 self._trades_today.append(result)
                 self._set_cooldown(ticker)
-                self.log.info("SOLD %d shares of %s @ $%.2f — %s", shares, ticker, quote.price, reason)
+                self.log.info("SOLD %.6g shares of %s @ $%.2f — %s", shares, ticker, quote.price, reason)
             return result
         except Exception as e:
             self.log.error("Failed to sell %s: %s", ticker, e)
@@ -420,13 +430,65 @@ class TradingDaemon:
         except Exception as e:
             self.log.error("YouTube strategy refresh failed: %s", e)
 
+    def _maybe_refresh_trump(self) -> None:
+        """Check Trump Truth Social / news for new tradeable signals."""
+        if not self.daemon_config.trump_tracking:
+            return
+
+        refresh_delta = timedelta(minutes=self.daemon_config.trump_refresh_minutes)
+        if self._last_trump_refresh and datetime.utcnow() - self._last_trump_refresh < refresh_delta:
+            return
+
+        self.log.info("[yellow]Checking Trump Truth Social & news for signals...[/yellow]")
+        try:
+            from .trump_tracker import TrumpTracker
+            tracker = TrumpTracker()
+            tickers, summaries = tracker.get_tickers()
+
+            blacklist = set(t.upper() for t in self.daemon_config.trump_bearish_blacklist)
+
+            # Update bearish set
+            new_bearish: set[str] = set()
+            for s in summaries:
+                new_bearish.update(t.upper() for t in s.get("bearish_tickers", []))
+            if new_bearish != self._trump_bearish:
+                self.log.info(
+                    "[red]Trump bearish: %s[/red]",
+                    ", ".join(sorted(new_bearish)) or "(none)",
+                )
+            self._trump_bearish = new_bearish
+
+            # Add bullish tickers to extra watchlist (filtered)
+            new_extra = [
+                t.upper() for t in tickers
+                if self._ticker_allowed(t)
+                and t.upper() not in self._trump_bearish
+                and t.upper() not in blacklist
+            ]
+            if new_extra:
+                self.log.info(
+                    "[green]Trump signal — adding to watchlist:[/green] %s",
+                    ", ".join(new_extra),
+                )
+            self._trump_watchlist_extra = new_extra
+            self._last_trump_refresh = datetime.utcnow()
+        except Exception as e:
+            self.log.error("Trump tracking refresh failed: %s", e)
+
     def _get_tickers(self) -> list[str]:
         """Get the list of tickers to analyse this cycle."""
-        if self.daemon_config.watchlist:
-            return [
+        combined_bearish = self._youtube_bearish | self._trump_bearish
+
+        if self.daemon_config.watchlist or self._trump_watchlist_extra:
+            base = [
                 t.upper() for t in self.daemon_config.watchlist
-                if self._ticker_allowed(t) and t.upper() not in self._youtube_bearish
+                if self._ticker_allowed(t) and t.upper() not in combined_bearish
             ]
+            extra = [
+                t for t in self._trump_watchlist_extra
+                if t not in base and t not in combined_bearish
+            ]
+            return base + extra
 
         # Let the AI suggest
         self.log.info("No watchlist set — asking AI for suggestions...")

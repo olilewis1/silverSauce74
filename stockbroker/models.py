@@ -249,3 +249,16 @@ class DaemonConfig(BaseModel):
         ge=0.5,
         description="Re-fetch YouTube strategies every this many hours during a daemon session.",
     )
+    trump_tracking: bool = Field(
+        default=False,
+        description="Monitor Trump's Truth Social posts and news for tradeable signals.",
+    )
+    trump_refresh_minutes: float = Field(
+        default=15.0,
+        ge=5.0,
+        description="Check for new Trump posts/news every this many minutes.",
+    )
+    trump_bearish_blacklist: list[str] = Field(
+        default_factory=list,
+        description="Tickers to avoid buying even if Trump is bullish on them.",
+    )

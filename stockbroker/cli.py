@@ -85,7 +85,7 @@ def _trade_table(trades) -> Table:
             t.id,
             t.ticker,
             f"[{action_style}]{t.action.value.upper()}[/{action_style}]",
-            f"{t.shares:.0f}",
+            f"{t.shares:g}",
             f"${t.price:.2f}" if t.price else "—",
             f"${t.total:,.2f}" if t.total else "—",
             f"[{status_style}]{t.status.value.upper()}[/{status_style}]",
@@ -302,7 +302,10 @@ def main():
             if not _ticker_allowed(config.asset_class, ticker):
                 console.print(f"[red]{ticker} is not allowed for asset class mode '{config.asset_class.value}'.[/red]")
                 continue
-            shares = int(FloatPrompt.ask("Number of shares"))
+            shares = FloatPrompt.ask("Number of shares")
+            if shares <= 0:
+                console.print("[red]Shares must be greater than 0.[/red]")
+                continue
             with console.status(f"Fetching price for {ticker}..."):
                 from .market import get_quote
                 quote = get_quote(ticker)
@@ -328,8 +331,14 @@ def main():
                 console.print(f"[red]No position in {ticker}.[/red]")
                 continue
             pos = pm.portfolio.positions[ticker]
-            console.print(f"You hold {pos.shares:.2f} shares of {ticker}.")
-            shares = int(FloatPrompt.ask("Shares to sell"))
+            console.print(f"You hold {pos.shares:.4f} shares of {ticker}.")
+            shares = FloatPrompt.ask("Shares to sell")
+            if shares <= 0:
+                console.print("[red]Shares must be greater than 0.[/red]")
+                continue
+            if shares > pos.shares:
+                console.print(f"[yellow]You only hold {pos.shares:.4f} — selling the full position.[/yellow]")
+                shares = pos.shares
             with console.status(f"Fetching price for {ticker}..."):
                 from .market import get_quote
                 quote = get_quote(ticker)
@@ -514,6 +523,21 @@ def _start_daemon(config: AgentConfig, pm: PortfolioManager) -> None:
             default="6",
         ))
 
+    trump_tracking = Confirm.ask(
+        "Track Trump's Truth Social & news for trade signals?",
+        default=False,
+    )
+    trump_refresh = 15.0
+    if trump_tracking:
+        trump_refresh = float(Prompt.ask(
+            "Check Trump posts/news every N minutes",
+            default="15",
+        ))
+        console.print(
+            "[dim]Trump mode: monitors Truth Social + news, uses AI to identify "
+            "affected assets (gold, energy, defense, crypto etc.) and trades them.[/dim]"
+        )
+
     daemon_config = DaemonConfig(
         check_interval_minutes=interval,
         max_trades_per_day=max_day,
@@ -525,6 +549,8 @@ def _start_daemon(config: AgentConfig, pm: PortfolioManager) -> None:
         cooldown_after_trade_minutes=cooldown,
         youtube_channels=youtube_channels,
         youtube_refresh_hours=youtube_refresh,
+        trump_tracking=trump_tracking,
+        trump_refresh_minutes=trump_refresh,
     )
 
     if not Confirm.ask("\n[bold]Start autonomous trading now?[/bold]"):

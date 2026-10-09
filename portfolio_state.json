@@ -1,38 +1,85 @@
 {
-  "cash": 92.62,
-  "initial_cash": 103.48,
-  "buying_power": 92.62,
+  "cash": 65.97,
+  "initial_cash": 64.16,
+  "buying_power": 65.97,
   "positions": {
+    "CCL": {
+      "ticker": "CCL",
+      "shares": 1.2,
+      "avg_cost": 26.6,
+      "current_price": 26.32,
+      "last_updated": "2026-10-09T19:42:32.085213"
+    },
     "DOGEUSD": {
       "ticker": "DOGEUSD",
-      "shares": 381.045,
-      "avg_cost": 0.102489758,
-      "current_price": 0.108636,
-      "last_updated": "2026-05-16T10:42:16.516077"
+      "shares": 264.3375,
+      "avg_cost": 0.084549,
+      "current_price": 0.084549,
+      "last_updated": "2026-10-09T19:42:32.085241"
+    },
+    "LTCUSD": {
+      "ticker": "LTCUSD",
+      "shares": 0.06012132,
+      "avg_cost": 63.51,
+      "current_price": 63.51,
+      "last_updated": "2026-10-09T19:42:32.085244"
     }
   },
   "trade_history": [
     {
-      "id": "9b6d9e29",
-      "ticker": "DOGE-USD",
-      "action": "buy",
-      "shares": 100.0,
-      "price": 0.108636,
-      "total": 10.8636,
+      "id": "fb55e9b1",
+      "ticker": "F",
+      "action": "sell",
+      "shares": 2.3,
+      "price": 12.205,
+      "total": 28.071499999999997,
       "status": "executed",
-      "reasoning": "Dogecoin is currently trading near its recent lows with a positive 3-month change, indicating potential for a rebound. The recent volume surge suggests increased interest, and the high-risk profile of the client aligns with the volatile nature of Dogecoin.",
-      "timestamp": "2026-05-16T10:42:15.876780"
+      "reasoning": "Stop-loss triggered at -12.6% (limit: 8%)",
+      "timestamp": "2026-10-09T19:42:21.668394"
     },
     {
-      "id": "f89f200e",
+      "id": "b56b7a19",
+      "ticker": "DOGE-USD",
+      "action": "buy",
+      "shares": 265.0,
+      "price": 0.084549,
+      "total": 22.405485,
+      "status": "executed",
+      "reasoning": "Dogecoin has shown a recent price decline, creating a potential buying opportunity given its historical volatility and momentum. The current price is near its 52-week low, suggesting limited downside risk with potential for a rebound. The high-risk profile of the client aligns with the speculative nature of Dogecoin.",
+      "timestamp": "2026-10-09T19:42:28.642870"
+    },
+    {
+      "id": "7195ddaf",
       "ticker": "LTC-USD",
       "action": "buy",
-      "shares": 1.0,
-      "price": 55.68,
-      "total": 55.68,
+      "shares": 0.060272,
+      "price": 63.51,
+      "total": 3.8278747199999996,
+      "status": "executed",
+      "reasoning": "Litecoin has shown a strong 3-month upward trend with a 44.69% increase, and recent pullback offers a buying opportunity. The current price is near the lower range of recent trading, suggesting potential for rebound. Given the high volatility and client's high-risk profile, this aligns with their strategy.",
+      "timestamp": "2026-10-09T19:42:31.527323"
+    },
+    {
+      "id": "699669b2",
+      "ticker": "AMC",
+      "action": "buy",
+      "shares": 7.5,
+      "price": 3.0,
+      "total": 22.5,
       "status": "rejected",
-      "reasoning": "Litecoin is trading near its 52-week low, presenting a potential buying opportunity given its recent price volatility and volume increase. The current market sentiment and momentum suggest a possible rebound, aligning with the high-risk profile. | REJECTED: Adjusted position too small after constraints.",
-      "timestamp": "2026-05-16T10:42:20.314128"
+      "reasoning": "AMC has shown strong momentum with a 57.71% increase over the last 3 months and is currently trading near its 52-week high. The recent price trend and high volatility align with the client's high-risk profile, making it a suitable growth play. | REJECTED: Investment cap reached — no more cash can be deployed.",
+      "timestamp": "2026-10-09T19:42:34.034425"
+    },
+    {
+      "id": "7c24b752",
+      "ticker": "FUBO",
+      "action": "buy",
+      "shares": 2.54,
+      "price": 8.84,
+      "total": 22.4536,
+      "status": "rejected",
+      "reasoning": "fuboTV Inc. has shown a recent pullback to a support level near its 52-week low, presenting a potential buying opportunity for a high-risk investor. Despite recent volatility, the stock has had a history of sharp upward movements, making it suitable for a momentum play. | REJECTED: Investment cap reached — no more cash can be deployed.",
+      "timestamp": "2026-10-09T19:42:39.592718"
     }
   ]
 }
